@@ -8,15 +8,12 @@ namespace UnityStandardAssets._2D
         [SerializeField] private float m_MaxSpeed = 10f;                    
         [SerializeField] private float m_JumpForce = 400f;   
         [SerializeField] private float m_DashForce = 200f;                  
-        [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;  
         [SerializeField] private bool m_AirControl = false;                 
         [SerializeField] private LayerMask m_WhatIsGround;                  
 
         private Transform m_GroundCheck;    
-        const float k_GroundedRadius = .2f; 
+        const float k_GroundedRadius = .5f; 
         private bool m_Grounded;           
-        private Transform m_CeilingCheck;   
-        const float k_CeilingRadius = .01f; 
         private Animator m_Anim;            
         private Rigidbody2D m_Rigidbody2D;
         private bool m_FacingRight = true;  
@@ -24,7 +21,6 @@ namespace UnityStandardAssets._2D
         private void Awake()
         {
             m_GroundCheck = transform.Find("GroundCheck");
-            m_CeilingCheck = transform.Find("CeilingCheck");
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
@@ -47,24 +43,11 @@ namespace UnityStandardAssets._2D
         }
 
 
-        public void Move(float move, bool crouch, bool jump, bool dash)
+        public void Move(float move, bool jump, bool dash)
         {
-            // If crouching, check to see if the character can stand up
-            if (!crouch && m_Anim.GetBool("Crouch"))
-            {
-                // If the character has a ceiling preventing them from standing up, keep them crouching
-                if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
-                {
-                    crouch = true;
-                }
-            }
-
-            // Set whether or not the character is crouching in the animator
-            m_Anim.SetBool("Crouch", crouch);
 
             if (m_Grounded || m_AirControl)
             {
-                move = (crouch ? move*m_CrouchSpeed : move);
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                 m_Anim.SetFloat("Speed", Mathf.Abs(move));

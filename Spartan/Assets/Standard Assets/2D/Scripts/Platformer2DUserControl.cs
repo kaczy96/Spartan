@@ -33,10 +33,9 @@ namespace UnityStandardAssets._2D
 
         private void FixedUpdate()
         {
-            bool crouch = Input.GetKey(KeyCode.LeftControl);
             float h = Input.GetAxis("Horizontal");
             
-            m_Character.Move(h, crouch, m_Jump, m_Dash);
+            m_Character.Move(h, m_Jump, m_Dash);
             m_Jump = false;
             m_Dash = false;
         }
