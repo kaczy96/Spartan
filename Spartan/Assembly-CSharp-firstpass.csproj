@@ -66,6 +66,7 @@
     <Compile Include="Assets\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\PlatformerCharacter2D.cs" />
     <Compile Include="Assets\Standard Assets\2D\Scripts\Restarter.cs" />
+    <Compile Include="Assets\Standard Assets\2D\Scripts\Spawner.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/eventowy/Documents/Spartan/Spartan/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
