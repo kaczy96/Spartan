@@ -52,6 +52,9 @@ public class AIController : MonoBehaviour
                 retreatDistance = rangedDistance-1;
                 Shoot();
                 break;
+            case Enemy.EnemyType.Bug:
+                break;
+                
         }
     }
 

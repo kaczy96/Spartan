@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
     {
         None,
         Meele,
-        Ranged
+        Ranged,
+        Bug
     }
 }
