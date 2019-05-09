@@ -11,7 +11,8 @@ public class Projectile : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        target = new Vector2(player.position.x, player.position.y);
+        var position = player.position;
+        target = new Vector2(position.x, position.y);
     }
 
     private void Update()
@@ -26,7 +27,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.tag == "Player")
+        if(other.CompareTag("Player"))
             DestroyProjectile();
     }
 
