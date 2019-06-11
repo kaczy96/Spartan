@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
   [System.Serializable]
   public class PlayerStats
   {
-      public float Health = 100f;
+      public float Health = 5f;
   }
   
   
@@ -21,6 +21,14 @@ public class Player : MonoBehaviour
      if (transform.position.y <= fallBoundary)
      {
          DamagePlayer(99999);
+     }
+ }
+
+ private void OnTriggerEnter2D(Collider2D other)
+ {
+     if (other.CompareTag("Enemy"))
+     {
+         
      }
  }
 

@@ -8,7 +8,9 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="AIController.cs" t="Include" />
+        <e p="AttackTrigger.cs" t="Include" />
         <e p="Bug.cs" t="Include" />
+        <e p="DamageController.cs" t="Include" />
         <e p="Enemy.cs" t="Include" />
         <e p="GameMaster.cs" t="Include" />
         <e p="Player.cs" t="Include" />
@@ -40,6 +42,7 @@
               <e p="CameraFollow.cs" t="Include" />
               <e p="Platformer2DUserControl.cs" t="Include" />
               <e p="PlatformerCharacter2D.cs" t="Include" />
+              <e p="PlayerAttack.cs" t="Include" />
               <e p="Restarter.cs" t="Include" />
               <e p="Spawner.cs" t="Include" />
             </e>
