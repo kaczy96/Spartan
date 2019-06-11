@@ -41,7 +41,7 @@ public class PlayerAttack : MonoBehaviour
                 
         }
 
-        anim.SetBool("Attacking", attacking);
+        anim.SetBool("attacking", attacking);
     }
 }
 
