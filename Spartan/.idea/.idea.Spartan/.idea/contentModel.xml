@@ -9,10 +9,12 @@
       <e p="Assets" t="Include">
         <e p="AIController.cs" t="Include" />
         <e p="AttackTrigger.cs" t="Include" />
+        <e p="AttackTriggerEnemy.cs" t="Include" />
         <e p="Bug.cs" t="Include" />
         <e p="DamageController.cs" t="Include" />
         <e p="Enemy.cs" t="Include" />
         <e p="GameMaster.cs" t="Include" />
+        <e p="HealthBar.cs" t="Include" />
         <e p="Player.cs" t="Include" />
         <e p="Projectile.cs" t="Include" />
         <e p="RepetableSpawner.cs" t="Include" />

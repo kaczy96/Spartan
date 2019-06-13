@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 4309082330561748443}
   - component: {fileID: 4309082330561748442}
   - component: {fileID: 4309082330561748441}
+  - component: {fileID: 3318189002710325695}
   m_Layer: 0
   m_Name: Magin
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,3 +141,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.4027386, y: 5}
   m_EdgeRadius: 0
+--- !u!114 &3318189002710325695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309082330561748440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46b83bad36ffe1479f22e3c41c45b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 2
+  player: {fileID: 0}

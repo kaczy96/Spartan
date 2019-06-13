@@ -61,10 +61,12 @@
   <ItemGroup>
     <Compile Include="Assets\AIController.cs" />
     <Compile Include="Assets\AttackTrigger.cs" />
+    <Compile Include="Assets\AttackTriggerEnemy.cs" />
     <Compile Include="Assets\Bug.cs" />
     <Compile Include="Assets\DamageController.cs" />
     <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\GameMaster.cs" />
+    <Compile Include="Assets\HealthBar.cs" />
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\Projectile.cs" />
     <Compile Include="Assets\RepetableSpawner.cs" />
