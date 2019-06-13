@@ -21,6 +21,6 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        SetSize(player.playerStats.Health);
+        SetSize(player.playerStats.health);
     }
 }
