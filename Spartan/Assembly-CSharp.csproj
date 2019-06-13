@@ -63,6 +63,7 @@
     <Compile Include="Assets\AttackTrigger.cs" />
     <Compile Include="Assets\AttackTriggerEnemy.cs" />
     <Compile Include="Assets\Bug.cs" />
+    <Compile Include="Assets\CameraController.cs" />
     <Compile Include="Assets\DamageController.cs" />
     <Compile Include="Assets\Enemy.cs" />
     <Compile Include="Assets\GameMaster.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\ShakeBehavior.cs" />
     <Compile Include="Assets\SpawnerOnPlayerEnter.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">

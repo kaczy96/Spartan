@@ -8,6 +8,7 @@ TagManager:
   - GM
   - SpawnedItem
   - Enemy
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX

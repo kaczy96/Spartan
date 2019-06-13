@@ -9,6 +9,24 @@ public class AttackTriggerEnemy : MonoBehaviour
         private float attackTime = 0;
         private float attackCd = 1f;
         public GameObject player;
+        private Material matWhite;
+        private Material matDefault;
+        private SpriteRenderer sr;
+
+        private void Start()
+        {
+            sr = GetComponent<SpriteRenderer>();
+            matWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
+            matDefault = sr.material;
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.CompareTag("PlayerAttack"))
+            {
+                sr.material = matWhite;
+            }
+        }
 
         private void OnTriggerStay2D(Collider2D other)
         {
