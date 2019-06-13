@@ -128225,11 +128225,12 @@ MonoBehaviour:
   speed: 0
   enemy: {fileID: 2103773685}
   stoppingDistance: 0
-  rangedDistance: 0
+  rangedDistance: 3
   retreatDistance: 0
   runningAwaySpeed: 0
-  startTimeBetweenShots: 0
-  projectile: {fileID: 0}
+  startTimeBetweenShots: 2
+  projectile: {fileID: 5999311507002290171, guid: a82b741772a1a9a4da4587013a498d90,
+    type: 3}
 --- !u!114 &2103773685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128256,7 +128257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
-  player: {fileID: 0}
+  player: {fileID: 532936147}
   matWhite: {fileID: 2100000, guid: a86aaf263f298a446820863bfdc87dfd, type: 2}
 --- !u!1 &2104336816
 GameObject:

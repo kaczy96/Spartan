@@ -28,7 +28,7 @@ public class ShakeBehavior : MonoBehaviour
     void StopCameraShaking()
     {
          CancelInvoke("StartCameraShaking");
-         mainCamera.transform.position = cameraInitialPosition;
+         //mainCamera.transform.position = cameraInitialPosition;
     }
 
     private void Update()
