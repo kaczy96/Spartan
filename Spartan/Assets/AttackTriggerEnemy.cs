@@ -9,14 +9,14 @@ public class AttackTriggerEnemy : MonoBehaviour
         private float attackTime = 0;
         private float attackCd = 1f;
         public GameObject player;
-        private Material matWhite;
+        public Material matWhite;
         private Material matDefault;
         private SpriteRenderer sr;
 
         private void Start()
         {
             sr = GetComponent<SpriteRenderer>();
-            matWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
+            //matWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
             matDefault = sr.material;
         }
 
@@ -25,7 +25,13 @@ public class AttackTriggerEnemy : MonoBehaviour
             if (other.CompareTag("PlayerAttack"))
             {
                 sr.material = matWhite;
+            Invoke("ResetMaterial", .1f);
             }
+        }
+
+        void ResetMaterial()
+        {
+        sr.material = matDefault;
         }
 
         private void OnTriggerStay2D(Collider2D other)
