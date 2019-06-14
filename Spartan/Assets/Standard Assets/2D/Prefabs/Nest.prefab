@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1760427229423237817}
   - component: {fileID: 1760427229423237816}
   - component: {fileID: 1760427229423237823}
-  - component: {fileID: 1760427229423237822}
   m_Layer: 0
   m_Name: Nest
   m_TagString: Untagged
@@ -117,18 +116,3 @@ CircleCollider2D:
   m_Offset: {x: 0.011208837, y: -0.10648395}
   serializedVersion: 2
   m_Radius: 1.0488454
---- !u!114 &1760427229423237822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1760427229423237821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0475cf408fb4bc94f90d8a25f52b27e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawningObject: {fileID: 0}
-  startTimeBetweenSpawn: 0
-  target: {fileID: 0}
