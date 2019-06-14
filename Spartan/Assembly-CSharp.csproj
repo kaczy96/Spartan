@@ -61,27 +61,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\AIController.cs" />
-    <Compile Include="Assets\AttackTrigger.cs" />
-    <Compile Include="Assets\AttackTriggerEnemy.cs" />
-    <Compile Include="Assets\Bug.cs" />
-    <Compile Include="Assets\CameraController.cs" />
-    <Compile Include="Assets\DamageController.cs" />
-    <Compile Include="Assets\Enemy.cs" />
-    <Compile Include="Assets\GameMaster.cs" />
-    <Compile Include="Assets\HealthBar.cs" />
-    <Compile Include="Assets\Player.cs" />
-    <Compile Include="Assets\Projectile.cs" />
-    <Compile Include="Assets\RepetableSpawner.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\AIController.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\AttackTrigger.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\AttackTriggerEnemy.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\Bug.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\CameraController.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\DamageController.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\Enemy.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\GameMaster.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\HealthBar.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\Player.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\Projectile.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\RepetableSpawner.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\ShakeBehavior.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\ShakeBehavior.cs" />
-    <Compile Include="Assets\SpawnerOnPlayerEnter.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\Spawner.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\SpawnerOnPlayerEnter.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>C:/Users/eventowy/Documents/Spartan/Spartan/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
