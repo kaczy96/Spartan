@@ -4713,9 +4713,10 @@ GameObject:
   - component: {fileID: 6482471275024002300}
   - component: {fileID: 3331405137163429708}
   - component: {fileID: 3331405137163429709}
+  - component: {fileID: 3918288773515542189}
   m_Layer: 0
   m_Name: Bug with particle
-  m_TagString: Bug
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4729,7 +4730,7 @@ Transform:
   m_GameObject: {fileID: 3331405137163429747}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.431, y: 0.99, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.2}
   m_Children:
   - {fileID: 1008022954250512937}
   m_Father: {fileID: 0}
@@ -4769,9 +4770,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -717779735
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: bdab088de82f2b94cb7513376df86a77, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4848,8 +4849,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2.4, y: 2.4}
+  m_Offset: {x: 0.050188698, y: -0.050188698}
+  m_Size: {x: 1.2958528, y: 2.0587158}
   m_Direction: 0
 --- !u!114 &3331405137163429709
 MonoBehaviour:
@@ -4863,4 +4864,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbffb43e441b8449b989127cafdf520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 2
+--- !u!114 &3918288773515542189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331405137163429747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f46b83bad36ffe1479f22e3c41c45b74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 2
+  player: {fileID: 917006234, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+  matWhite: {fileID: 2100000, guid: a86aaf263f298a446820863bfdc87dfd, type: 2}
