@@ -46,12 +46,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 1913642407
-    locked: 0
   - name: Background
     uniqueID: 2247338799
     locked: 0
   - name: Environment Elements
     uniqueID: 3577187561
+    locked: 0
+  - name: Foreground Elements
+    uniqueID: 2035689273
     locked: 0
