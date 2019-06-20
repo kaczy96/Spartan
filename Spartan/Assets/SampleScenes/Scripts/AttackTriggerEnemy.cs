@@ -27,6 +27,10 @@ public class AttackTriggerEnemy : MonoBehaviour
                 sr.material = matWhite;
             Invoke("ResetMaterial", .1f);
             }
+            if(other.CompareTag("Player"))
+            {
+            Damage();
+            }
         }
 
         void ResetMaterial()
@@ -49,6 +53,8 @@ public class AttackTriggerEnemy : MonoBehaviour
                 hurting = false;
             }
         }
+        
+        
 
         private void Damage()
         {

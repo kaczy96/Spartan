@@ -11,6 +11,7 @@ public class AIController : MonoBehaviour
     public float rangedDistance;
     public float retreatDistance;
     public float runningAwaySpeed;
+    public float missileRange;
 
     private float timeBetweenShots;
     public float startTimeBetweenShots;
@@ -60,7 +61,7 @@ public class AIController : MonoBehaviour
 
     void Shoot()
     {
-        if (timeBetweenShots <= 0)
+        if (timeBetweenShots <= 0  && Vector2.Distance(transform.position, target.position) < missileRange)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             timeBetweenShots = startTimeBetweenShots;
