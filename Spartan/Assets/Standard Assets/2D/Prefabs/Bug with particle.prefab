@@ -4714,6 +4714,7 @@ GameObject:
   - component: {fileID: 3331405137163429708}
   - component: {fileID: 3331405137163429709}
   - component: {fileID: 3918288773515542189}
+  - component: {fileID: 950499709054677400}
   m_Layer: 0
   m_Name: Bug with particle
   m_TagString: Enemy
@@ -4829,7 +4830,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  enemy: {fileID: 0}
+  enemy: {fileID: 6294426032848519667}
   stoppingDistance: 0
   rangedDistance: 0
   retreatDistance: 0
@@ -4843,7 +4844,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3331405137163429747}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -4865,6 +4866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 1
+  DeathExplosion: {fileID: 1379031612862187294, guid: 8181d10645081344d9122d0605904a71,
+    type: 3}
 --- !u!114 &3918288773515542189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4880,3 +4883,19 @@ MonoBehaviour:
   dmg: 2
   player: {fileID: 917006234, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
   matWhite: {fileID: 2100000, guid: a86aaf263f298a446820863bfdc87dfd, type: 2}
+--- !u!58 &950499709054677400
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3331405137163429747}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.022808114, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.1011649

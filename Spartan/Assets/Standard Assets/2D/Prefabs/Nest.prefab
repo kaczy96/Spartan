@@ -132,6 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
+  DeathExplosion: {fileID: 1379031612862187294, guid: 8181d10645081344d9122d0605904a71,
+    type: 3}
 --- !u!114 &971655628
 MonoBehaviour:
   m_ObjectHideFlags: 0

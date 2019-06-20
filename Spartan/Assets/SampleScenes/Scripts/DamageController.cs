@@ -6,6 +6,7 @@ public class DamageController : MonoBehaviour
 {
     [SerializeField] public int startingHealth;
     private int currentHealth;
+    public GameObject DeathExplosion;
 
     void Start()
     {
@@ -24,7 +25,10 @@ public class DamageController : MonoBehaviour
     {
         if (currentHealth <= 0)
         {
+        
             Destroy(gameObject);
+            Instantiate(DeathExplosion, transform.position, Quaternion.identity);
+
         }
     }
 }
