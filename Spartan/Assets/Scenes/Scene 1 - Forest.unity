@@ -736,18 +736,6 @@ PrefabInstance:
       propertyPath: playerStats.thirdHp
       value: 
       objectReference: {fileID: 1340165542}
-    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
-      propertyPath: playerStats.startingHealth
-      value: 5000
-      objectReference: {fileID: 0}
-    - target: {fileID: 917006237, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
-      propertyPath: m_WhatIsGround.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 917006237, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
-      propertyPath: m_AirControl
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
 --- !u!1 &19682713
@@ -62648,7 +62636,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1001375292
 RectTransform:
   m_ObjectHideFlags: 0
