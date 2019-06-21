@@ -71,6 +71,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\CameraController.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\DamageController.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\DestroyParticles.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\Enemy.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\GameMaster.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\HealthBar.cs" />

@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
 
      if (playerStats.health <= 0)
      {
+         UpdateHpMeter();
          Debug.Log("Kill player");
          GameMaster.KillPlayer(this);
      }
@@ -75,49 +76,64 @@ public class Player : MonoBehaviour
  {
      switch ((int) playerStats.health)
      {
-         case 5:
+         case 6:
          {
              playerStats.firestHp.fillAmount = 1;
              playerStats.secondHp.fillAmount = 1;
              playerStats.thirdHp.fillAmount = 1;
-             break;
+             return;
+         }
+         case 5:
+         {
+             playerStats.firestHp.fillAmount = 1;
+             playerStats.secondHp.fillAmount = 1;
+             playerStats.thirdHp.fillAmount = 0.5f;
+             return;
          }
          case 4:
          {
              playerStats.firestHp.fillAmount = 1;
              playerStats.secondHp.fillAmount = 1;
-             playerStats.thirdHp.fillAmount = 0.5f;
-             break;
+             playerStats.thirdHp.fillAmount = 0;
+             return;
          }
          case 3:
          {
              playerStats.firestHp.fillAmount = 1;
-             playerStats.secondHp.fillAmount = 1f;
+             playerStats.secondHp.fillAmount = 0.5f;
              playerStats.thirdHp.fillAmount = 0;
-             break;
+             return;
          }
          case 2:
          {
              playerStats.firestHp.fillAmount = 1;
-             playerStats.secondHp.fillAmount = 0.5f;
+             playerStats.secondHp.fillAmount = 0;
              playerStats.thirdHp.fillAmount = 0;
-             break;
+             return;
          }
          case 1:
          {
-             playerStats.firestHp.fillAmount = 1f;
+             playerStats.firestHp.fillAmount = 0.5f;
              playerStats.secondHp.fillAmount = 0;
              playerStats.thirdHp.fillAmount = 0;
-             break;
+             return;
          }
          case 0:
          {
              playerStats.firestHp.fillAmount = 0f;
-             playerStats.secondHp.fillAmount = 0;
-             playerStats.thirdHp.fillAmount = 0;
-             break;
+             playerStats.secondHp.fillAmount = 0f;
+             playerStats.thirdHp.fillAmount = 0f;
+             return;
          }
-     }
+
+         default:
+         {
+             playerStats.firestHp.fillAmount = 0f;
+             playerStats.secondHp.fillAmount = 0f;
+             playerStats.thirdHp.fillAmount = 0f;
+             return;
+         }
+        }
 
  }
  

@@ -736,6 +736,14 @@ PrefabInstance:
       propertyPath: playerStats.thirdHp
       value: 
       objectReference: {fileID: 1340165542}
+    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: playerStats.startingHealth
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: playerStats.health
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
 --- !u!1 &19682713
@@ -130513,11 +130521,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9150177278655109229, guid: 7f1f7c507630b16488489a1d9f0ca685,
-        type: 3}
-      propertyPath: missileRange
-      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9150177278655109231, guid: 7f1f7c507630b16488489a1d9f0ca685,
         type: 3}

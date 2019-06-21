@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 3318384718771685522}
   - component: {fileID: 3318384718771685517}
   - component: {fileID: 3318384718771685516}
+  - component: {fileID: 3476979340092774055}
   m_Layer: 0
-  m_Name: MaginProjectileExplosion
+  m_Name: MaginProjectile_Explosion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4756,3 +4757,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &3476979340092774055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3318384718771685519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0f8355114681e48b692d09003993dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 3
