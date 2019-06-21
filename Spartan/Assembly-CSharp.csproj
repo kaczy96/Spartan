@@ -84,7 +84,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\Spawner.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SpawnerOnPlayerEnter.cs" />
-    <None Include="Assets\Kenney\Textures2\Additive_Base.shader" />
+    <None Include="Assets\Graphic Assets\Effects\Textures2\Additive_Base.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>C:/Users/eventowy/Documents/Spartan/Spartan/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
