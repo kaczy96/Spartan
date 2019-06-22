@@ -15,4 +15,11 @@ public class CameraController : MonoBehaviour {
         transform.position = smoothedPosition;
     }
 
+    private void Update()
+    {
+        if (target == null)
+        {
+            target = GameObject.FindWithTag("Player").transform;
+        }
+    }
 }

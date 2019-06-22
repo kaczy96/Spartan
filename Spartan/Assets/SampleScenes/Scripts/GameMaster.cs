@@ -28,6 +28,7 @@ public class GameMaster : MonoBehaviour
     
     {
         Destroy(player.gameObject);
+        Debug.Log("Respawning player!");
         gm.StartCoroutine(gm.RespawnPlayer());
     }
 }

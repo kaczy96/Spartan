@@ -7,18 +7,13 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AIController.cs" t="Include" />
-        <e p="AttackTrigger.cs" t="Include" />
-        <e p="AttackTriggerEnemy.cs" t="Include" />
-        <e p="Bug.cs" t="Include" />
-        <e p="CameraController.cs" t="Include" />
-        <e p="DamageController.cs" t="Include" />
-        <e p="Enemy.cs" t="Include" />
-        <e p="GameMaster.cs" t="Include" />
-        <e p="HealthBar.cs" t="Include" />
-        <e p="Player.cs" t="Include" />
-        <e p="Projectile.cs" t="Include" />
-        <e p="RepetableSpawner.cs" t="Include" />
+        <e p="Graphic Assets" t="Include">
+          <e p="Effects" t="Include">
+            <e p="Textures2" t="Include">
+              <e p="Additive_Base.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="SampleScenes" t="Include">
           <e p="Menu" t="Include">
             <e p="Scripts" t="Include">
@@ -28,17 +23,31 @@
             </e>
           </e>
           <e p="Scripts" t="Include">
+            <e p="AIController.cs" t="Include" />
+            <e p="AttackTrigger.cs" t="Include" />
+            <e p="AttackTriggerEnemy.cs" t="Include" />
+            <e p="Bug.cs" t="Include" />
+            <e p="CameraController.cs" t="Include" />
             <e p="CameraSwitch.cs" t="Include" />
+            <e p="DamageController.cs" t="Include" />
+            <e p="DestroyParticles.cs" t="Include" />
+            <e p="Enemy.cs" t="Include" />
+            <e p="GameMaster.cs" t="Include" />
+            <e p="HealthBar.cs" t="Include" />
             <e p="LevelReset.cs" t="Include" />
             <e p="PlaceTargetWithMouse.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+            <e p="Projectile.cs" t="Include" />
+            <e p="RepetableSpawner.cs" t="Include" />
+            <e p="ShakeBehavior.cs" t="Include" />
             <e p="SlowMoButton.cs" t="Include" />
+            <e p="Spawner.cs" t="Include" />
+            <e p="SpawnerOnPlayerEnter.cs" t="Include" />
           </e>
           <e p="Shaders" t="Include">
             <e p="Skybox-Procedural.shader" t="Include" />
           </e>
         </e>
-        <e p="ShakeBehavior.cs" t="Include" />
-        <e p="SpawnerOnPlayerEnter.cs" t="Include" />
         <e p="Standard Assets" t="Include">
           <e p="2D" t="Include">
             <e p="Scripts" t="Include">
@@ -48,7 +57,6 @@
               <e p="PlatformerCharacter2D.cs" t="Include" />
               <e p="PlayerAttack.cs" t="Include" />
               <e p="Restarter.cs" t="Include" />
-              <e p="Spawner.cs" t="Include" />
             </e>
           </e>
         </e>
