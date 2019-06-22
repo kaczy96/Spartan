@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  projectileExplosion: {fileID: 3318384718771685519, guid: 51021201df675f54d980af186c30c3ad,
+  projectileExplosion: {fileID: 145779921557836784, guid: 5e974437ffbb8d24db18cb1ba9bc3c02,
     type: 3}
 --- !u!58 &7960733500424480
 CircleCollider2D:
@@ -127,7 +127,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
-  player: {fileID: 0}
   matWhite: {fileID: 0}
 --- !u!114 &6091072487636331331
 MonoBehaviour:
