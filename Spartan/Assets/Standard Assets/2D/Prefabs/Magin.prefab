@@ -196,8 +196,7 @@ MonoBehaviour:
   runningAwaySpeed: 0
   missileRange: 8
   startTimeBetweenShots: 2
-  projectile: {fileID: 5999311507002290171, guid: a82b741772a1a9a4da4587013a498d90,
-    type: 3}
+  projectile: {fileID: 0}
 --- !u!114 &9150177278655109228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,5 +223,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
-  player: {fileID: 0}
   matWhite: {fileID: 2100000, guid: a86aaf263f298a446820863bfdc87dfd, type: 2}

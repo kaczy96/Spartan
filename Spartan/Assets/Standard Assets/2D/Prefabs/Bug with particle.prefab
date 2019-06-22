@@ -4849,7 +4849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbffb43e441b8449b989127cafdf520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 4
+  startingHealth: 1
   DeathExplosion: {fileID: 1379031612862187294, guid: 8181d10645081344d9122d0605904a71,
     type: 3}
 --- !u!114 &7771807344332849516
@@ -4864,8 +4864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f46b83bad36ffe1479f22e3c41c45b74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmg: 3
-  player: {fileID: 917006234, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+  dmg: 1
   matWhite: {fileID: 2100000, guid: a86aaf263f298a446820863bfdc87dfd, type: 2}
 --- !u!58 &9075153020754448242
 CircleCollider2D:

@@ -8,7 +8,7 @@ public class AttackTriggerEnemy : MonoBehaviour
         private bool hurting = false;
         private float attackTime = 0;
         private float attackCd = 1f;
-        public GameObject player;
+        private GameObject player;
         public Material matWhite;
         private Material matDefault;
         private SpriteRenderer sr;
