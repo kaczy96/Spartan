@@ -194,9 +194,10 @@ MonoBehaviour:
   rangedDistance: 3
   retreatDistance: 0
   runningAwaySpeed: 0
-  missileRange: 8
-  startTimeBetweenShots: 2
-  projectile: {fileID: 0}
+  missileRange: 9
+  startTimeBetweenShots: 3
+  projectile: {fileID: 8548043355994325649, guid: 5496bdcdd4edc184e8606cc953988256,
+    type: 3}
 --- !u!114 &9150177278655109228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,4 +224,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
+  hurting: 0
   matWhite: {fileID: 2100000, guid: a86aaf263f298a446820863bfdc87dfd, type: 2}

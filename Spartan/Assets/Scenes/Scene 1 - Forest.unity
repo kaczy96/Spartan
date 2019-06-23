@@ -21929,7 +21929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2b446d3d997aa841aa676f9ad1d00b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodImage: {fileID: 344104195}
 --- !u!1 &347320855
 GameObject:
   m_ObjectHideFlags: 0
@@ -130635,10 +130634,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150177278655109229, guid: 7f1f7c507630b16488489a1d9f0ca685,
         type: 3}
-      propertyPath: projectile
-      value: 
-      objectReference: {fileID: 5999311507002290171, guid: a82b741772a1a9a4da4587013a498d90,
-        type: 3}
+      propertyPath: missileRange
+      value: 8.5
+      objectReference: {fileID: 0}
     - target: {fileID: 9150177278655109230, guid: 7f1f7c507630b16488489a1d9f0ca685,
         type: 3}
       propertyPath: m_Material

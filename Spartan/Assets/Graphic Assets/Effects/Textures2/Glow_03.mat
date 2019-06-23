@@ -24,5 +24,5 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - _Glow_Intensity: 2
+    - _Glow_Intensity: 0.9
     m_Colors: []
