@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4110833562664241845}
   - component: {fileID: 3691896352827232916}
   - component: {fileID: 7960733500424480}
-  - component: {fileID: 1375286103801139508}
   - component: {fileID: 6091072487636331331}
   m_Layer: 0
   m_Name: MaginProjectile_Sprite
@@ -98,6 +97,7 @@ MonoBehaviour:
   speed: 5
   projectileExplosion: {fileID: 145779921557836784, guid: 5e974437ffbb8d24db18cb1ba9bc3c02,
     type: 3}
+  dmg: 1
 --- !u!58 &7960733500424480
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -114,20 +114,6 @@ CircleCollider2D:
   m_Offset: {x: -0.04045844, y: 0}
   serializedVersion: 2
   m_Radius: 2.442366
---- !u!114 &1375286103801139508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5999311507002290171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f46b83bad36ffe1479f22e3c41c45b74, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmg: 1
-  matWhite: {fileID: 0}
 --- !u!114 &6091072487636331331
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,12 +8,16 @@ public class Projectile : MonoBehaviour
     private Transform player;
     private Vector2 target;
     public GameObject projectileExplosion;
+    public int dmg;
+
+    
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         var position = player.position;
         target = new Vector2(position.x, position.y);
+
     }
 
     private void Update()
@@ -27,11 +31,22 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
-            DestroyProjectile();
-    }*/
+        if (other.CompareTag("Player"))
+        {
+            Damage();
+            
+        }
+           
+    }
+
+    public void Damage()
+    {
+        Debug.Log("Enemy Attacking!");
+        //attackTime = attackCd;
+        player.SendMessageUpwards("DamagePlayer", dmg);
+    }
 
     private void DestroyProjectile()
     {

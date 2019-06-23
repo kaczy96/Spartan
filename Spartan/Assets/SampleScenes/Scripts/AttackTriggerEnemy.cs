@@ -56,7 +56,7 @@ public class AttackTriggerEnemy : MonoBehaviour
         
         
 
-        private void Damage()
+        public void Damage()
         {
             Debug.Log("Enemy Attacking!");
             attackTime = attackCd;
