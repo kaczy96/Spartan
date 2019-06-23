@@ -4714,6 +4714,7 @@ GameObject:
   - component: {fileID: 2123080599474080409}
   - component: {fileID: 7771807344332849516}
   - component: {fileID: 9075153020754448242}
+  - component: {fileID: 6615144195785555308}
   m_Layer: 0
   m_Name: Bug with particle
   m_TagString: Enemy
@@ -4882,3 +4883,17 @@ CircleCollider2D:
   m_Offset: {x: 0.089174904, y: -0.03651619}
   serializedVersion: 2
   m_Radius: 1.2430573
+--- !u!114 &6615144195785555308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782289605223225099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21aa8c884e395044e917f9a45e23186e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeathExplosion: {fileID: 1379031612862187294, guid: 8181d10645081344d9122d0605904a71,
+    type: 3}

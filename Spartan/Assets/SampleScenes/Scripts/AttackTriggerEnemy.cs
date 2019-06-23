@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttackTriggerEnemy : MonoBehaviour
 {
         [SerializeField ]public int dmg;
-        private bool hurting = false;
+        public bool hurting = false;
         private float attackTime = 0;
         private float attackCd = 1f;
         private GameObject player;
