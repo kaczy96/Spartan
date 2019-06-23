@@ -736,6 +736,30 @@ PrefabInstance:
       propertyPath: playerStats.thirdHp
       value: 
       objectReference: {fileID: 1340165542}
+    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: playerStats.damageScreen
+      value: 
+      objectReference: {fileID: 344104195}
+    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: playerStats.damageColour.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: playerStats.damageColour.g
+      value: 0.06016379
+      objectReference: {fileID: 0}
+    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: playerStats.damageColour.b
+      value: 0.06016379
+      objectReference: {fileID: 0}
+    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: playerStats.smoothColour
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: playerStats.damageColour.a
+      value: 0.3137255
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
 --- !u!1 &19682713
@@ -21893,7 +21917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.007843138}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

@@ -19,6 +19,10 @@ public class Player : MonoBehaviour
       public Image firestHp;
       public Image secondHp;
       public Image thirdHp;
+      public Image damageScreen;
+      public bool damaged = false;
+      public Color damageColour = new Color(0f,0f,0f, 0.5f);
+      public float smoothColour = 5f;
   }
   
   
@@ -53,6 +57,18 @@ public class Player : MonoBehaviour
      playerStats.livesText.text = "Lives x " + playerStats.health;
 
      UpdateHpMeter();
+
+     if (playerStats.damaged)
+     {
+         playerStats.damageScreen.color = playerStats.damageColour;
+     }
+     else
+     {
+         playerStats.damageScreen.color = Color.Lerp(playerStats.damageScreen.color, Color.clear,
+             playerStats.smoothColour * Time.deltaTime);
+     }
+
+     playerStats.damaged = false;
  }
 
  public void DamagePlayer(int damage)
@@ -61,6 +77,7 @@ public class Player : MonoBehaviour
      {
          playerStats.startCounting = true;
          playerStats.playerTimeBetweenHits = playerStats.attackCd;
+         playerStats.damaged = true;
          playerStats.health -= damage;
      }
 
