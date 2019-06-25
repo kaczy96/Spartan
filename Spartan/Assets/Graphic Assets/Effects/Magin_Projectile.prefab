@@ -4709,6 +4709,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5205015417575024293}
   - component: {fileID: 199267688389471327}
+  - component: {fileID: 2451425116407715811}
   m_Layer: 0
   m_Name: Magin_Projectile
   m_TagString: Untagged
@@ -4746,7 +4747,23 @@ MonoBehaviour:
   speed: 15
   projectileExplosion: {fileID: 145779921557836784, guid: 5e974437ffbb8d24db18cb1ba9bc3c02,
     type: 3}
-  dmg: 0
+  dmg: 1
+--- !u!58 &2451425116407715811
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8548043355994325649}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.51821876, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.3312776
 --- !u!1 &8736600565501647999
 GameObject:
   m_ObjectHideFlags: 0

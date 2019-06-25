@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
       public Image secondHp;
       public Image thirdHp;
       public Image damageScreen;
+      public GameObject playerDeathEffect;
       public bool damaged = false;
       public Color damageColour = new Color(0f,0f,0f, 0.5f);
       public float smoothColour = 5f;
@@ -85,8 +86,10 @@ public class Player : MonoBehaviour
      {
          UpdateHpMeter();
          Debug.Log("Kill player");
+         
          GameMaster.KillPlayer(this);
-     }
+         Instantiate(playerStats.playerDeathEffect, transform.position, transform.rotation);
+        }
  }
 
  public void UpdateHpMeter()
