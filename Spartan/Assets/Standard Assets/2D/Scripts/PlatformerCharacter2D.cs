@@ -12,7 +12,7 @@ namespace UnityStandardAssets._2D
         [SerializeField] private LayerMask m_WhatIsGround;                  
 
         private Transform m_GroundCheck;    
-        const float k_GroundedRadius = .5f; 
+        const float k_GroundedRadius = .1f; 
         private bool m_Grounded;           
         private Animator m_Anim;            
         private Rigidbody2D m_Rigidbody2D;

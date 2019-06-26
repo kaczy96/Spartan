@@ -73,7 +73,7 @@ public class AttackTriggerEnemy : MonoBehaviour
 
             if (player == null)
             {
-                player = GameObject.FindGameObjectWithTag("Player");
+             //   player = GameObject.FindGameObjectWithTag("Player");
             }
         }
 }
