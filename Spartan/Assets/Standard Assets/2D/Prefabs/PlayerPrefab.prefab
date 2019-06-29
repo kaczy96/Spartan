@@ -181,7 +181,6 @@ GameObject:
   - component: {fileID: 917006237}
   - component: {fileID: 917006236}
   - component: {fileID: 917006235}
-  - component: {fileID: 532936157}
   - component: {fileID: 532936156}
   m_Layer: 8
   m_Name: PlayerPrefab
@@ -297,7 +296,8 @@ MonoBehaviour:
     secondHp: {fileID: 0}
     thirdHp: {fileID: 0}
     damageScreen: {fileID: 0}
-    playerDeathEffect: {fileID: 0}
+    playerDeathEffect: {fileID: 3587459965882653020, guid: c5256a3179df30f4cbde62b7b68e85b0,
+      type: 3}
     damaged: 0
     damageColour: {r: 0.9811321, g: 0.06016379, b: 0.06016379, a: 0.3137255}
     smoothColour: 2
@@ -318,7 +318,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -380,22 +380,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.60955185, y: 2.2555504}
   m_EdgeRadius: 0
---- !u!70 &532936157
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 917006234}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.085492134, y: -0.22228037}
-  m_Size: {x: 0.8362702, y: 2.7512906}
-  m_Direction: 0
 --- !u!114 &532936156
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -42,7 +42,7 @@ public class AttackTriggerEnemy : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                hurting = true;
+               hurting = true;
             }
         }
 
@@ -50,7 +50,7 @@ public class AttackTriggerEnemy : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                hurting = false;
+               hurting = false;
             }
         }
         
@@ -58,9 +58,11 @@ public class AttackTriggerEnemy : MonoBehaviour
 
         public void Damage()
         {
-            Debug.Log("Enemy Attacking!");
-            attackTime = attackCd;
-            player.SendMessageUpwards("DamagePlayer",dmg);
+                    Debug.Log("Enemy Attacking!");
+                    attackTime = attackCd;
+                    player.SendMessageUpwards("DamagePlayer", dmg);
+
+            
         }
         
         private void Update()
@@ -73,7 +75,7 @@ public class AttackTriggerEnemy : MonoBehaviour
 
             if (player == null)
             {
-             //   player = GameObject.FindGameObjectWithTag("Player");
+                player = GameObject.FindGameObjectWithTag("Player");
             }
         }
 }

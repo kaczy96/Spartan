@@ -4747,7 +4747,7 @@ MonoBehaviour:
   speed: 15
   projectileExplosion: {fileID: 145779921557836784, guid: 5e974437ffbb8d24db18cb1ba9bc3c02,
     type: 3}
-  dmg: 1
+  dmg: 0
 --- !u!58 &2451425116407715811
 CircleCollider2D:
   m_ObjectHideFlags: 0
