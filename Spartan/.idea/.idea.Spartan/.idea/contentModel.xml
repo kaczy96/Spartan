@@ -7,8 +7,9 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="BugDestruction.cs" t="Include" />
-        <e p="DamageBlinkManager.cs" t="Include" />
+        <e p="Background" t="Include">
+          <e p="Parallax.cs" t="Include" />
+        </e>
         <e p="Graphic Assets" t="Include">
           <e p="Effects" t="Include">
             <e p="Textures2" t="Include">
@@ -29,6 +30,7 @@
             <e p="AttackTrigger.cs" t="Include" />
             <e p="AttackTriggerEnemy.cs" t="Include" />
             <e p="Bug.cs" t="Include" />
+            <e p="BugDestruction.cs" t="Include" />
             <e p="CameraController.cs" t="Include" />
             <e p="CameraSwitch.cs" t="Include" />
             <e p="DamageController.cs" t="Include" />
