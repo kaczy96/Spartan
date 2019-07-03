@@ -4747,7 +4747,7 @@ MonoBehaviour:
   speed: 15
   projectileExplosion: {fileID: 145779921557836784, guid: 5e974437ffbb8d24db18cb1ba9bc3c02,
     type: 3}
-  dmg: 0
+  dmg: 1
 --- !u!58 &2451425116407715811
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4761,9 +4761,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.51821876, y: 0}
+  m_Offset: {x: -0.013113499, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3312776
+  m_Radius: 0.34998536
 --- !u!1 &8736600565501647999
 GameObject:
   m_ObjectHideFlags: 0

@@ -285,7 +285,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.5
+      scalar: 1
       minScalar: 0.1
       maxCurve:
         serializedVersion: 2
@@ -4733,7 +4733,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2035689273
   m_SortingLayer: 3
-  m_SortingOrder: 31
+  m_SortingOrder: 35
   m_RenderMode: 0
   m_SortMode: 0
   m_MinParticleSize: 0
