@@ -16,7 +16,7 @@ namespace UnityStandardAssets._2D
         private bool m_Grounded;           
         private Animator m_Anim;            
         private Rigidbody2D m_Rigidbody2D;
-        private bool m_FacingRight = true;  
+        private bool m_FacingRight = true;
         
         private void Awake()
         {
@@ -46,13 +46,18 @@ namespace UnityStandardAssets._2D
         public void Move(float move, bool jump, bool dash)
         {
 
+
             if (m_Grounded || m_AirControl)
             {
+
 
                 // The Speed animator parameter is set to the absolute value of the horizontal input.
                 m_Anim.SetFloat("Speed", Mathf.Abs(move));
 
                 m_Rigidbody2D.velocity = new Vector2(move*m_MaxSpeed, m_Rigidbody2D.velocity.y);
+
+
+
 
                 if (move > 0 && !m_FacingRight)
                 {
@@ -81,6 +86,24 @@ namespace UnityStandardAssets._2D
 //            }
         }
 
+
+        void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.tag == "MovingPlatform")
+            {
+                transform.parent = other.transform;
+                m_MaxSpeed *= 5;
+            }
+        }
+
+        void OnCollisionExit2D(Collision2D other)
+        {
+            if (other.gameObject.tag == "MovingPlatform")
+            {
+                transform.parent = null;
+                m_MaxSpeed = 10f;
+            }
+        }
 
         private void Flip()
         {

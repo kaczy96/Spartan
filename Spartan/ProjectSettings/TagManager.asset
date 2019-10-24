@@ -9,6 +9,8 @@ TagManager:
   - SpawnedItem
   - Enemy
   - PlayerAttack
+  - Portal
+  - MovingPlatform
   layers:
   - Default
   - TransparentFX

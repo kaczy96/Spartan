@@ -78,6 +78,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\GameMaster.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\HealthBar.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\MovingObjects.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\Player.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PortalMechanics.cs" />
