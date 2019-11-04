@@ -379,10 +379,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: d6fbffff
+      scrollPos: {x: 0, y: 4959}
+      m_SelectedIDs: 16400000
+      m_LastClickedID: 16406
+      m_ExpandedIDs: d6fbffff2a21000016420000064b0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -438,9 +438,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -292.11548, y: 18.371222, z: -0.6362793}
+    m_Target: {x: -237.2783, y: 35.82992, z: 0.87890625}
     speed: 2
-    m_Value: {x: -292.11548, y: 18.371222, z: -0.6362793}
+    m_Value: {x: -237.2783, y: 35.82992, z: 0.87890625}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -472,9 +472,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 167.17041
+    m_Target: 15.4362
     speed: 2
-    m_Value: 167.17041
+    m_Value: 15.4362
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -524,20 +524,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Standard Assets/2D/Prefabs
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Standard Assets/2D/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\eventowy\Documents\Spartan\Spartan
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 460}
-    m_SelectedIDs: b0150000
-    m_LastClickedID: 5552
-    m_ExpandedIDs: 000000000c10000044110000fa120000361300004e13000076130000d014000008150000e415000026160000861600004c170000801700008e1800006a1a00003c1b0000261c0000901c00003a1d0000146c0000166c0000186c000000ca9a3b
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 0c100000
+    m_LastClickedID: 4108
+    m_ExpandedIDs: 000000000c1000002411000044110000fa120000361300004e1300007613000070140000d014000008150000e415000026160000861600004c170000801700008e1800006a1a00003c1b0000261c0000901c00003a1d0000146c0000166c0000186c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -592,8 +592,8 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000f840010000000000243900009218000012100000
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000f840010024390000921800001210000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

@@ -86,25 +86,25 @@ MonoBehaviour:
   eyeAdaptation:
     m_Enabled: 0
     m_Settings:
-      lowPercent: 26.779404
-      highPercent: 95
-      minLuminance: -5
-      maxLuminance: 1
+      lowPercent: 41.551723
+      highPercent: 92.030914
+      minLuminance: -8.84
+      maxLuminance: 1.25
       keyValue: 0.25
       dynamicKeyValue: 0
       adaptationType: 0
       speedUp: 2
       speedDown: 1
-      logMin: -16
+      logMin: -14
       logMax: 1
   bloom:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 3
-        threshold: 1.2
-        softKnee: 0.85
-        radius: 3.02
+        intensity: 1.5
+        threshold: 1.1
+        softKnee: 0.8
+        radius: 3
         antiFlicker: 0
       lensDirt:
         texture: {fileID: 0}
@@ -114,14 +114,14 @@ MonoBehaviour:
     m_Settings:
       tonemapping:
         tonemapper: 1
-        neutralBlackIn: 0.034
-        neutralWhiteIn: 15.1
-        neutralBlackOut: -0.008
+        neutralBlackIn: -0.02
+        neutralWhiteIn: 12.7
+        neutralBlackOut: -0.08
         neutralWhiteOut: 13.3
         neutralWhiteLevel: 5.3
         neutralWhiteClip: 10
       basic:
-        postExposure: 0
+        postExposure: 2.08
         temperature: 2
         tint: -72
         hueShift: 97
@@ -133,7 +133,7 @@ MonoBehaviour:
         blue: {x: 0, y: 0, z: 1}
         currentEditingChannel: 2
       colorWheels:
-        mode: 1
+        mode: 0
         log:
           slope: {r: 0.08497107, g: 1, b: 0.32853743, a: 0}
           power: {r: 1, g: 1, b: 1, a: 0}
@@ -306,10 +306,10 @@ MonoBehaviour:
       lut: {fileID: 0}
       contribution: 1
   chromaticAberration:
-    m_Enabled: 0
+    m_Enabled: 1
     m_Settings:
       spectralTexture: {fileID: 0}
-      intensity: 0.272
+      intensity: 0.1
   grain:
     m_Enabled: 0
     m_Settings:
@@ -321,11 +321,11 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       mode: 0
-      color: {r: 0.3018868, g: 0.14097543, b: 0.14097543, a: 1}
+      color: {r: 0.21698111, g: 0.21698111, b: 0.21698111, a: 1}
       center: {x: 0.5, y: 0.5}
       intensity: 0.25
-      smoothness: 0.35
-      roundness: 0.76
+      smoothness: 0.5
+      roundness: 0.8
       mask: {fileID: 0}
       opacity: 1
       rounded: 1
