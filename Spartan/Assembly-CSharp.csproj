@@ -133,6 +133,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\Spawner.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SpawnerOnPlayerEnter.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\Spikes.cs" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\Fog.shader" />

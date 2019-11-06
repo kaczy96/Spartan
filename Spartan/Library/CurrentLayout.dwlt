@@ -114,7 +114,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 75
+  controlID: 76
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 76
+  controlID: 77
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 77
+  controlID: 78
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -379,10 +379,10 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 4959}
-      m_SelectedIDs: 16400000
-      m_LastClickedID: 16406
-      m_ExpandedIDs: d6fbffff2a21000016420000064b0000
+      scrollPos: {x: 0, y: 32}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2e3affffd6fbffff342100004e2500000e2e0000983300000c350000c63e000032420000c4470000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -438,9 +438,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -237.2783, y: 35.82992, z: 0.87890625}
+    m_Target: {x: -42.000614, y: -42.54157, z: -0.23789456}
     speed: 2
-    m_Value: {x: -237.2783, y: 35.82992, z: 0.87890625}
+    m_Value: {x: -42.000614, y: -42.54157, z: -0.23789456}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -472,9 +472,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.4362
+    m_Target: 40.03453
     speed: 2
-    m_Value: 15.4362
+    m_Value: 40.03453
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -524,34 +524,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Graphic Assets/Effects/Particle samples/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Graphic Assets/Effects/Particle samples/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\eventowy\Documents\Spartan\Spartan
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 0c100000
-    m_LastClickedID: 4108
-    m_ExpandedIDs: 000000000c1000002411000044110000fa120000361300004e1300007613000070140000d014000008150000e415000026160000861600004c170000801700008e1800006a1a00003c1b0000261c0000901c00003a1d0000146c0000166c0000186c000000ca9a3b
+    scrollPos: {x: 0, y: 303}
+    m_SelectedIDs: 041d0000
+    m_LastClickedID: 7428
+    m_ExpandedIDs: 000000000e1000002611000046110000fe1200003a130000521300007a13000076140000d61400000e150000ea1500002c1600008c160000521700008617000094180000701a0000421b00002c1c0000961c0000421d0000326c0000346c0000366c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: Background
+      m_OriginalName: Background
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 6178
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -565,7 +565,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000c10000044110000fa120000361300004e13000076130000d014000008150000e415000026160000861600004c170000801700008e1800006a1a00003c1b0000261c0000901c00003a1d0000146c0000166c0000186c0000
+    m_ExpandedIDs: 000000000e1000002611000046110000fe1200003a130000521300007a13000076140000d61400000e150000ea1500002c1600008c160000521700008617000094180000701a0000421b00002c1c0000961c0000421d0000326c0000346c0000366c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
