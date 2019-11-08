@@ -4,78 +4,76 @@ using UnityEngine;
 
 public class AttackTriggerEnemy : MonoBehaviour
 {
-        [SerializeField ]public int dmg;
-        public bool hurting = false;
-        private float attackTime = 0;
-        private float attackCd = 1f;
-        private GameObject player;
-        public Material matWhite;
-        private Material matDefault;
-        private SpriteRenderer sr;
+    [SerializeField] public int dmg;
+    public bool hurting = false;
+    private float attackTime = 0;
+    private float attackCd = 1f;
+    private Player player;
+    public Material matWhite;
+    private Material matDefault;
+    private SpriteRenderer sr;
 
-        private void Start()
-        {
-            sr = GetComponent<SpriteRenderer>();
-            //matWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
-            matDefault = sr.material;
-        }
+    private void Start()
+    {
+        sr = GetComponent<SpriteRenderer>();
+        //matWhite = Resources.Load("WhiteFlash", typeof(Material)) as Material;
+        matDefault = sr.material;
+    }
 
-        private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("PlayerAttack"))
         {
-            if (other.CompareTag("PlayerAttack"))
-            {
-                sr.material = matWhite;
+            sr.material = matWhite;
             Invoke("ResetMaterial", .1f);
-            }
-            if(other.CompareTag("Player"))
-            {
-            Damage();
-            }
         }
-
-        void ResetMaterial()
+        if (other.CompareTag("Player"))
         {
+            HurtThePlayer();
+        }
+    }
+
+    void ResetMaterial()
+    {
         sr.material = matDefault;
-        }
+    }
 
-        private void OnTriggerStay2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            if (other.CompareTag("Player"))
-            {
-               hurting = true;
-            }
+            hurting = true;
         }
+    }
 
-        private void OnTriggerExit2D(Collider2D other)
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            if (other.CompareTag("Player"))
-            {
-               hurting = false;
-            }
+            hurting = false;
         }
-        
-        
+    }
 
-        public void Damage()
+
+
+    public void HurtThePlayer()
+    {
+        Debug.Log("Enemy " + gameObject.name + " just attacked the player!");
+        attackTime = attackCd;
+        player.DamagePlayer(dmg);
+    }
+
+    private void Update()
+    {
+
+        if (hurting)
         {
-                    Debug.Log("Enemy Attacking!");
-                    attackTime = attackCd;
-                    player.SendMessageUpwards("DamagePlayer", dmg);
-
-            
+            HurtThePlayer();
         }
-        
-        private void Update()
+
+        if (player == null)
         {
-
-            if (hurting)
-            {
-                Damage();
-            }
-
-            if (player == null)
-            {
-                player = GameObject.FindGameObjectWithTag("Player");
-            }
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
         }
+    }
 }

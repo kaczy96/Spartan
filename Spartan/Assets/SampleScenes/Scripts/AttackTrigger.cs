@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Player's weapon
+ */
 public class AttackTrigger : MonoBehaviour
 {
     [SerializeField ]public int dmg;
@@ -10,8 +13,9 @@ public class AttackTrigger : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Debug.Log("Attacking!");
-            other.SendMessageUpwards("Damage",dmg);
+            Debug.Log("Player just attacked the enemy!");
+            var enemiesDamageController = other.GetComponent<DamageController>();
+            enemiesDamageController.Damage(dmg);
         }
     }
 }

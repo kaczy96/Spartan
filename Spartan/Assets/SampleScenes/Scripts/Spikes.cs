@@ -6,13 +6,13 @@ using UnityEngine;
 
 public class Spikes : MonoBehaviour
 {
-    private Transform player;
+    private Player player;
     public int dmg;
     public bool hurting = false;
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -53,7 +53,7 @@ public class Spikes : MonoBehaviour
     {
         Debug.Log("Enemy Attacking!");
         //attackTime = attackCd;
-        player.SendMessageUpwards("DamagePlayer", dmg);
+        player.DamagePlayer(dmg);
     }
 }
 
