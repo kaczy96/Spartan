@@ -118,16 +118,15 @@
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\AIController.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\AttackTrigger.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\AttackTriggerEnemy.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\Bug.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\BugController.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\BugDestruction.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraController.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\DamageController.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\DestroyParticles.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\Enemy.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\EnemiesMovementControllerByTheyTypes.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\EnemyTypes.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\GameMaster.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\HealthBar.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
@@ -142,6 +141,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\Spawner.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SpawnerOnPlayerEnter.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\Spikes.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\TriggerAttackOnPlayer.cs" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\Fog.shader" />
@@ -185,6 +185,15 @@
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\AmbientOcclusion.cginc" />
     <None Include="Assets\PP\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Editor">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
     </Reference>
@@ -200,41 +209,17 @@
     <Reference Include="Unity.RenderPipelines.Lightweight.Editor">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.RenderPipelines.Lightweight.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ShaderGraph.Editor">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
@@ -251,6 +236,9 @@
     <Reference Include="Unity.2D.Sprite.Editor">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
@@ -259,6 +247,18 @@
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Analytics.DataPrivacy">
+      <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
       <HintPath>D:/GitHub/Spartan/Spartan/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>

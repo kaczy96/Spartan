@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bug : MonoBehaviour
+public class BugController : MonoBehaviour
 {
     private float timeBetweenSpawns;
     public float startTimeBetweenSpawns;

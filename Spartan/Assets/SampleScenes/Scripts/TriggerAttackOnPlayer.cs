@@ -5,7 +5,7 @@ using UnityEngine;
 /*
  * Player's weapon
  */
-public class AttackTrigger : MonoBehaviour
+public class TriggerAttackOnPlayer : MonoBehaviour
 {
     [SerializeField ]public int dmg;
 

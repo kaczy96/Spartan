@@ -2,11 +2,11 @@
 using UnityEditor;
 using UnityEngine;
 
-public class AIController : MonoBehaviour
+public class EnemiesMovementControllerByTheyTypes : MonoBehaviour
 {
     public float speed;
     private Transform target;
-    public Enemy enemy;
+    public EnemyTypes enemy;
     public float stoppingDistance;
     public float rangedDistance;
     public float retreatDistance;
@@ -19,7 +19,7 @@ public class AIController : MonoBehaviour
 
     private void Start()
     {
-        enemy = GetComponent<Enemy>();
+        enemy = GetComponent<EnemyTypes>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         timeBetweenShots = startTimeBetweenShots;
     }
@@ -44,16 +44,16 @@ public class AIController : MonoBehaviour
             
         switch (enemy.enemyType)
         {
-            case Enemy.EnemyType.Meele:
+            case EnemyTypes.EnemyType.Meele:
                 stoppingDistance = (int) 1.0f;
                 retreatDistance = 0.5f;
                 break;
-            case Enemy.EnemyType.Ranged:
+            case EnemyTypes.EnemyType.Ranged:
                 stoppingDistance = rangedDistance;
                 retreatDistance = rangedDistance-1;
                 Shoot();
                 break;
-            case Enemy.EnemyType.Bug:
+            case EnemyTypes.EnemyType.Bug:
                 break;
                 
         }
