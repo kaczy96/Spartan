@@ -195,7 +195,7 @@ MonoBehaviour:
   retreatDistance: 0
   runningAwaySpeed: 0
   missileRange: 9
-  startTimeBetweenShots: 3
+  startTimeBetweenShots: 4
   projectile: {fileID: 8548043355994325649, guid: 5496bdcdd4edc184e8606cc953988256,
     type: 3}
 --- !u!114 &9150177278655109228

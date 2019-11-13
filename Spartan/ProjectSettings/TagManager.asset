@@ -11,6 +11,7 @@ TagManager:
   - PlayerAttack
   - Portal
   - MovingPlatform
+  - Stationary Platform
   layers:
   - Default
   - TransparentFX

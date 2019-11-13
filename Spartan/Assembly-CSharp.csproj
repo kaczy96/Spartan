@@ -131,6 +131,7 @@
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\MovingObjects.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
+    <Compile Include="Assets\SampleScenes\Scripts\PlatformController.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\Player.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PortalMechanics.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\Projectile.cs" />
