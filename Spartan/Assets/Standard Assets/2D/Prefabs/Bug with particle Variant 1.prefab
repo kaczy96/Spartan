@@ -12,6 +12,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bug with particle Variant 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7771807344332849516, guid: 13b03a00626008449ba421d90c0c473d,
+        type: 3}
+      propertyPath: dmg
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413364385584182030, guid: 13b03a00626008449ba421d90c0c473d,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413364385584182030, guid: 13b03a00626008449ba421d90c0c473d,
+        type: 3}
+      propertyPath: stoppingDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413364385584182030, guid: 13b03a00626008449ba421d90c0c473d,
+        type: 3}
+      propertyPath: runningAwaySpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7413364385584182030, guid: 13b03a00626008449ba421d90c0c473d,
+        type: 3}
+      propertyPath: retreatDistance
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6922502262434496525, guid: 13b03a00626008449ba421d90c0c473d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -92,35 +117,25 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.7123699
       objectReference: {fileID: 0}
-    - target: {fileID: 7413364385584182030, guid: 13b03a00626008449ba421d90c0c473d,
-        type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413364385584182030, guid: 13b03a00626008449ba421d90c0c473d,
-        type: 3}
-      propertyPath: stoppingDistance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413364385584182030, guid: 13b03a00626008449ba421d90c0c473d,
-        type: 3}
-      propertyPath: runningAwaySpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7413364385584182030, guid: 13b03a00626008449ba421d90c0c473d,
-        type: 3}
-      propertyPath: retreatDistance
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 2123080599474080409, guid: 13b03a00626008449ba421d90c0c473d,
         type: 3}
       propertyPath: startingHealth
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 7771807344332849516, guid: 13b03a00626008449ba421d90c0c473d,
+    - target: {fileID: 5598195204298409280, guid: 13b03a00626008449ba421d90c0c473d,
         type: 3}
-      propertyPath: dmg
-      value: 2
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.9339623
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598195204298409280, guid: 13b03a00626008449ba421d90c0c473d,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.5506853
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598195204298409280, guid: 13b03a00626008449ba421d90c0c473d,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.9157202
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13b03a00626008449ba421d90c0c473d, type: 3}
