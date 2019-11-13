@@ -29,7 +29,9 @@ public class MovingObjects : MonoBehaviour
         else if (objectToMove.transform.position == StartPoint.position)
         {
             actualTarget = EndPoint.position;
-        }
+        }    
     }
+
+
 
 }
