@@ -29,19 +29,16 @@ namespace UnityStandardAssets._2D
         private void FixedUpdate()
         {
             m_Grounded = false;
-
             Collider2D[] colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, k_GroundedRadius, m_WhatIsGround);
+
             for (int i = 0; i < colliders.Length; i++)
             {
                 if (colliders[i].gameObject != gameObject)
                     m_Grounded = true;
             }
+
             m_Anim.SetBool("Ground", m_Grounded);
-
-            // Set the vertical animation
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
-
-
         }
 
 
@@ -49,15 +46,9 @@ namespace UnityStandardAssets._2D
         {
             if (m_Grounded || m_AirControl)
             {
-
-
-                // The Speed animator parameter is set to the absolute value of the horizontal input.
                 m_Anim.SetFloat("Speed", Mathf.Abs(move));
-
+        
                 m_Rigidbody2D.velocity = new Vector2(move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
-
-
-
 
                 if (move > 0 && !m_FacingRight)
                 {
@@ -86,31 +77,6 @@ namespace UnityStandardAssets._2D
             //            {
             //                m_Rigidbody2D.AddForce(new Vector2(-m_DashForce, 0f));
             //            }
-        }
-
-
-        void OnCollisionEnter2D(Collision2D other)
-        {
-            if (other.gameObject.tag == "MovingPlatform" && m_Grounded == true)
-            {
-                transform.parent = other.transform;
-            }
-        }
-
-        void OnCollisionStay2D(Collision2D other)
-        {
-            if (other.gameObject.tag == "MovingPlatform" && m_Grounded == true && m_Rigidbody2D.velocity.x != 0)
-            {
-                transform.parent = null;
-            }
-        }
-
-        void OnCollisionExit2D(Collision2D other)
-        {
-            if (other.gameObject.tag == "MovingPlatform" )
-            {
-                transform.parent = null;
-            }
         }
 
         private void Flip()

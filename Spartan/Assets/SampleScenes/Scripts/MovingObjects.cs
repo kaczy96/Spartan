@@ -1,37 +1,49 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class MovingObjects : MonoBehaviour
 {
+    [SerializeField]
+    private Transform platform;
 
-    public GameObject objectToMove;
-    public Transform StartPoint;
-    public Transform EndPoint;
+    [SerializeField]
+    private Transform startTransform;
 
-    public float movingSpeed;
-    private Vector3 actualTarget;
+    [SerializeField]
+    private Transform endTransform;
 
-    void Start()
+    [SerializeField]
+    private float platformSpeed;
+
+    private Vector3 direction;
+    private Transform destination;
+
+    private void Start()
     {
-        actualTarget = EndPoint.position;
+        SetDestination(startTransform);
     }
 
-    void Update()
+    private void FixedUpdate()
     {
-        objectToMove.transform.position = Vector3.MoveTowards(objectToMove.transform.position, actualTarget, movingSpeed * Time.deltaTime);
+        platform.GetComponent<Rigidbody2D>().MovePosition(platform.position + direction * platformSpeed * Time.fixedDeltaTime);
 
-        if (objectToMove.transform.position == EndPoint.position)
+        if (Vector3.Distance(platform.position, destination.position) < platformSpeed * Time.fixedDeltaTime)
         {
-            actualTarget = StartPoint.position;
+            SetDestination(destination == startTransform ? endTransform : startTransform);
         }
-
-        else if (objectToMove.transform.position == StartPoint.position)
-        {
-            actualTarget = EndPoint.position;
-        }    
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(startTransform.position, platform.localScale);
 
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(endTransform.position, platform.localScale);
+    }
 
+    private void SetDestination(Transform dest)
+    {
+        destination = dest;
+        direction = (destination.position - platform.position).normalized;
+    }
 }
