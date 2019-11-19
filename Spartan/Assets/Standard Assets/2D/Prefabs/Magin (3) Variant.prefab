@@ -108,15 +108,15 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 9150177278655109231, guid: 7f1f7c507630b16488489a1d9f0ca685,
-        type: 3}
-      propertyPath: dmg
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 9150177278655109217, guid: 7f1f7c507630b16488489a1d9f0ca685,
         type: 3}
       propertyPath: startingHealth
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9150177278655109231, guid: 7f1f7c507630b16488489a1d9f0ca685,
+        type: 3}
+      propertyPath: dmg
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f1f7c507630b16488489a1d9f0ca685, type: 3}
