@@ -5,36 +5,36 @@ using UnityEngine;
 public class Spawner : MonoBehaviour {
 
     public GameObject spawningObject;
+    public Transform target;
 
+    public float rangeOfSpawner;
     private float timeBetweenSpawn;
     public float startTimeBetweenSpawn;
-    public Transform target;
+ 
     void Start ()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
-
     }
 
-
-    private void OnTriggerStay2D(Collider2D other)
+    private void Update()
     {
-        if (other.tag == "Player" && target != null)
-            Spawn();
-           
+        Spawn();
+    }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireSphere(transform.position, rangeOfSpawner);
     }
 
     private void Spawn()
     {
-        if (timeBetweenSpawn <= 0)
+        if (timeBetweenSpawn <= 0 && Vector2.Distance(transform.position, target.position) <= rangeOfSpawner)
         {
-
             Instantiate(spawningObject, transform.position, Quaternion.identity);
             timeBetweenSpawn = startTimeBetweenSpawn;
-
         }
         else
         {
-
             timeBetweenSpawn -= Time.deltaTime;
         }
     }

@@ -7,7 +7,6 @@ public class AIController : MonoBehaviour
     private Transform target;
     public Enemy enemy;
     public GameObject projectile;
-    private SpriteRenderer EnemySpriteRenderer;
 
     public float speed;
     public float stoppingDistance;
@@ -24,7 +23,6 @@ public class AIController : MonoBehaviour
         enemy = GetComponent<Enemy>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         timeBetweenShots = startTimeBetweenShots;
-        EnemySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -64,6 +62,12 @@ public class AIController : MonoBehaviour
             case Enemy.EnemyType.Bug:
                 break;       
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(enemy.transform.position, missileRange);
     }
 
     private void Flip()
