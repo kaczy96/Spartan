@@ -6,7 +6,9 @@ public class Spawner : MonoBehaviour {
 
     public GameObject spawningObject;
     public Transform target;
+    private Animator SpawnerAnimator;
 
+    private bool isSpawning;
     public float rangeOfSpawner;
     private float timeBetweenSpawn;
     public float startTimeBetweenSpawn;
@@ -14,6 +16,7 @@ public class Spawner : MonoBehaviour {
     void Start ()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        SpawnerAnimator = GetComponentInParent<Animator>();
     }
 
     private void Update()
@@ -32,9 +35,10 @@ public class Spawner : MonoBehaviour {
         {
             Instantiate(spawningObject, transform.position, Quaternion.identity);
             timeBetweenSpawn = startTimeBetweenSpawn;
+            SpawnerAnimator.SetTrigger("Spawning");
         }
         else
-        {
+        {    
             timeBetweenSpawn -= Time.deltaTime;
         }
     }

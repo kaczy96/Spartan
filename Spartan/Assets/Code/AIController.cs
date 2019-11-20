@@ -7,6 +7,8 @@ public class AIController : MonoBehaviour
     private Transform target;
     public Enemy enemy;
     public GameObject projectile;
+    private Animator EnemyAnimator;
+    public Transform ProjectileTransformArea;
 
     public float speed;
     public float stoppingDistance;
@@ -23,6 +25,7 @@ public class AIController : MonoBehaviour
         enemy = GetComponent<Enemy>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         timeBetweenShots = startTimeBetweenShots;
+        EnemyAnimator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -82,8 +85,9 @@ public class AIController : MonoBehaviour
     {
         if (timeBetweenShots <= 0  && Vector2.Distance(transform.position, target.position) < missileRange)
         {
-            Instantiate(projectile, transform.position, Quaternion.identity);
-            timeBetweenShots = startTimeBetweenShots;
+            EnemyAnimator.SetTrigger("Attack");
+            Instantiate(projectile, ProjectileTransformArea.position, Quaternion.identity);
+            timeBetweenShots = startTimeBetweenShots;  
         }
         else
         {
