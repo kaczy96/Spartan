@@ -113,6 +113,12 @@ PrefabInstance:
       propertyPath: startingHealth
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9150177278655109217, guid: 7f1f7c507630b16488489a1d9f0ca685,
+        type: 3}
+      propertyPath: DeathExplosion
+      value: 
+      objectReference: {fileID: 4056312611617077262, guid: ca2cf7281c10a3c4f85402f3275b413b,
+        type: 3}
     - target: {fileID: 9150177278655109231, guid: 7f1f7c507630b16488489a1d9f0ca685,
         type: 3}
       propertyPath: dmg

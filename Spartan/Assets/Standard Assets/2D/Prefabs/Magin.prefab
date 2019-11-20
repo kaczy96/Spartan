@@ -148,8 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 2
-  DeathExplosion: {fileID: 1379031612862187294, guid: 8181d10645081344d9122d0605904a71,
-    type: 3}
+  DeathExplosion: {fileID: 100000, guid: f2dba9e16cd347f44a395b8204544ee5, type: 3}
 --- !u!61 &9150177278655109230
 BoxCollider2D:
   m_ObjectHideFlags: 0
