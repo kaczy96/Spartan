@@ -4655,7 +4655,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: de18a08f2590b364a978181788ef3dbc, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -4744,9 +4744,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23039f9a2e7ea7c408a90e4dd446f4e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
   projectileExplosion: {fileID: 145779921557836784, guid: 5e974437ffbb8d24db18cb1ba9bc3c02,
     type: 3}
+  speed: 15
   dmg: 1
 --- !u!58 &2451425116407715811
 CircleCollider2D:
