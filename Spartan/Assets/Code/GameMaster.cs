@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameMaster : MonoBehaviour
 {
     public static GameMaster gm;
+    public Player player;
 
     private void Start()
     {

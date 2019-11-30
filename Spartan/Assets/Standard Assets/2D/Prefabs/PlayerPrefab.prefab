@@ -288,19 +288,24 @@ MonoBehaviour:
   playerStats:
     playerTimeBetweenHits: 0
     attackCd: 2
-    startingHealth: 6
+    startingHealth: 5
     health: 0
     startCounting: 0
     livesText: {fileID: 0}
-    firestHp: {fileID: 0}
+    firstHp: {fileID: 0}
     secondHp: {fileID: 0}
     thirdHp: {fileID: 0}
+    forthHp: {fileID: 0}
+    fifthHp: {fileID: 0}
     damageScreen: {fileID: 0}
     playerDeathEffect: {fileID: 3587459965882653020, guid: c5256a3179df30f4cbde62b7b68e85b0,
+      type: 3}
+    maskDestroyEffect: {fileID: 770290978523898297, guid: ac135275b9bd7c348b153314dcffe37e,
       type: 3}
     damaged: 0
     damageColour: {r: 0.9811321, g: 0.06016379, b: 0.06016379, a: 0.3137255}
     smoothColour: 2
+  slot: {fileID: 0}
   fallBoundary: -20
 --- !u!50 &917006238
 Rigidbody2D:
@@ -318,7 +323,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
+  m_Material: {fileID: 6200000, guid: 0cb77231a430b454fb792ff7ffcc3943, type: 2}
   m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -363,7 +368,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 917006234}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 3626fe8e008014f6bbd19bb72937b311, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

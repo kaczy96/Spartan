@@ -16,19 +16,19 @@ public class Player : MonoBehaviour
       public float health = 0;
       public bool startCounting = false;
       public Text livesText;
-      public Image firestHp;
+      public Image firstHp;
       public Image secondHp;
       public Image thirdHp;
+      public Image forthHp;
+      public Image fifthHp;
       public Image damageScreen;
       public GameObject playerDeathEffect;
       public bool damaged = false;
       public Color damageColour = new Color(0f,0f,0f, 0.5f);
       public float smoothColour = 5f;
   }
-  
-  
- public PlayerStats playerStats = new PlayerStats();
 
+ public PlayerStats playerStats = new PlayerStats();
  public int fallBoundary = -20;
 
  private void Start()
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
 
      if (playerStats.damaged)
      {
-         playerStats.damageScreen.color = playerStats.damageColour;
+            playerStats.damageScreen.color = playerStats.damageColour;   
      }
      else
      {
@@ -80,7 +80,7 @@ public class Player : MonoBehaviour
          playerStats.playerTimeBetweenHits = playerStats.attackCd;
          playerStats.damaged = true;
          playerStats.health -= damage;
-     }
+        }
 
      if (playerStats.health <= 0)
      {
@@ -94,66 +94,74 @@ public class Player : MonoBehaviour
 
  public void UpdateHpMeter()
  {
-     switch ((int) playerStats.health)
+        switch ((int) playerStats.health)
      {
-         case 6:
-         {
-             playerStats.firestHp.fillAmount = 1;
-             playerStats.secondHp.fillAmount = 1;
-             playerStats.thirdHp.fillAmount = 1;
-             return;
-         }
          case 5:
          {
-             playerStats.firestHp.fillAmount = 1;
+             playerStats.firstHp.fillAmount = 1;
              playerStats.secondHp.fillAmount = 1;
-             playerStats.thirdHp.fillAmount = 0.5f;
+             playerStats.thirdHp.fillAmount = 1;
+             playerStats.forthHp.fillAmount = 1;
+             playerStats.fifthHp.fillAmount = 1;
              return;
          }
          case 4:
          {
-             playerStats.firestHp.fillAmount = 1;
+             playerStats.firstHp.fillAmount = 1;
              playerStats.secondHp.fillAmount = 1;
-             playerStats.thirdHp.fillAmount = 0;
+             playerStats.thirdHp.fillAmount = 1;
+             playerStats.forthHp.fillAmount = 1;
+             playerStats.fifthHp.fillAmount = 0;
              return;
          }
          case 3:
          {
-             playerStats.firestHp.fillAmount = 1;
-             playerStats.secondHp.fillAmount = 0.5f;
-             playerStats.thirdHp.fillAmount = 0;
+             playerStats.firstHp.fillAmount = 1;
+             playerStats.secondHp.fillAmount = 1;
+             playerStats.thirdHp.fillAmount = 1;
+             playerStats.forthHp.fillAmount = 0;
+             playerStats.fifthHp.fillAmount = 0;
              return;
          }
          case 2:
          {
-             playerStats.firestHp.fillAmount = 1;
-             playerStats.secondHp.fillAmount = 0;
+             playerStats.firstHp.fillAmount = 1;
+             playerStats.secondHp.fillAmount = 1;
              playerStats.thirdHp.fillAmount = 0;
+             playerStats.forthHp.fillAmount = 0;
+             playerStats.fifthHp.fillAmount = 0;
              return;
          }
          case 1:
          {
-             playerStats.firestHp.fillAmount = 0.5f;
+             playerStats.firstHp.fillAmount = 1;
              playerStats.secondHp.fillAmount = 0;
              playerStats.thirdHp.fillAmount = 0;
+             playerStats.forthHp.fillAmount = 0;
+             playerStats.fifthHp.fillAmount = 0;
              return;
          }
          case 0:
          {
-             playerStats.firestHp.fillAmount = 0f;
-             playerStats.secondHp.fillAmount = 0f;
-             playerStats.thirdHp.fillAmount = 0f;
+             playerStats.firstHp.fillAmount = 0;
+             playerStats.secondHp.fillAmount = 0;
+             playerStats.thirdHp.fillAmount = 0;
+             playerStats.forthHp.fillAmount = 0;
+             playerStats.fifthHp.fillAmount = 0;
              return;
          }
 
          default:
          {
-             playerStats.firestHp.fillAmount = 0f;
-             playerStats.secondHp.fillAmount = 0f;
-             playerStats.thirdHp.fillAmount = 0f;
+             playerStats.firstHp.fillAmount = 0;
+             playerStats.secondHp.fillAmount = 0;
+             playerStats.thirdHp.fillAmount = 0;
+             playerStats.forthHp.fillAmount = 0;
+             playerStats.fifthHp.fillAmount = 0;
              return;
          }
         }
+
 
  }
  
