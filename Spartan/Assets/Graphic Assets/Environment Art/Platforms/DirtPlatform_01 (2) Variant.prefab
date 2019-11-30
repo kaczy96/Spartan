@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 9092231767234475203, guid: ed80f0990eeaa5f41ad7d1fa3818acc0,
         type: 3}
       propertyPath: m_Name
-      value: DirtPlatform_01 (2)
+      value: DirtPlatform_01 (2) Variant
       objectReference: {fileID: 0}
     - target: {fileID: 9092231767234475200, guid: ed80f0990eeaa5f41ad7d1fa3818acc0,
         type: 3}
@@ -67,15 +67,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 9092231767234475200, guid: ed80f0990eeaa5f41ad7d1fa3818acc0,
+    - target: {fileID: 9092231767234475214, guid: ed80f0990eeaa5f41ad7d1fa3818acc0,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9092231767234475200, guid: ed80f0990eeaa5f41ad7d1fa3818acc0,
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d61313cb2e31d74f825252a13a62c98,
         type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed80f0990eeaa5f41ad7d1fa3818acc0, type: 3}

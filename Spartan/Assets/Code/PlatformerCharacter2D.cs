@@ -47,7 +47,6 @@ namespace UnityStandardAssets._2D
             if (m_Grounded || m_AirControl)
             {
                 m_Anim.SetFloat("Speed", Mathf.Abs(move));
-        
                 m_Rigidbody2D.velocity = new Vector2(move * m_MaxSpeed, m_Rigidbody2D.velocity.y);
 
                 if (move > 0 && !m_FacingRight)
