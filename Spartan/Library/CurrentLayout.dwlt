@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 887, y: 598}
-  m_MaxSize: {x: 16012, y: 18048}
+  m_MinSize: {x: 887, y: 622}
+  m_MaxSize: {x: 16012, y: 18072}
   vertical: 1
-  controlID: 43278
+  controlID: 1708
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 348}
   m_MaxSize: {x: 16012, y: 8048}
   vertical: 0
-  controlID: 43279
+  controlID: 1709
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 348}
   m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 43304
+  controlID: 1656
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_MinSize: {x: 408, y: 224}
   m_MaxSize: {x: 8008, y: 4024}
   vertical: 0
-  controlID: 43280
+  controlID: 1632
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -455,24 +455,24 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 5118}
-      m_SelectedIDs: 2436feff
-      m_LastClickedID: -117212
-      m_ExpandedIDs: d6f8feff56f9feff66f9feff6ef9feff10fafeff7a02fffffc1affffe654ffff4c56ffffacfaffffd6fbffff4a7b0000de81000086fa0000e0290100822b0100ea2e0100
+      scrollPos: {x: 0, y: 1486}
+      m_SelectedIDs: ae4a0100
+      m_LastClickedID: 84654
+      m_ExpandedIDs: ba31ffff3a32ffff3e32ffff4a32ffff5232fffffc32ffffc43effff00b1ffff48e9ffff00faffff94faffff24fbffff2cfbffffd6fbffff582600007e2900000a300000283d010010460100
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: geyser_Red
+        m_OriginalName: geyser_Red
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 85992
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 8}
       m_SearchString: 
@@ -540,9 +540,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 28.534208, y: 13.521528, z: 0.019813823}
+    m_Target: {x: 179.31462, y: 12.113062, z: -0.15034133}
     speed: 2
-    m_Value: {x: 28.534208, y: 13.521528, z: 0.019813823}
+    m_Value: {x: 179.31462, y: 12.113062, z: -0.15034133}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -574,9 +574,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 7.033784
+    m_Target: 16.173168
     speed: 2
-    m_Value: 7.033784
+    m_Value: 16.173168
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -661,34 +661,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Graphic Assets/Environment Art/Other
+    - Assets/Standard Assets/2D/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 73
   m_LastFolders:
-  - Assets/Graphic Assets/Environment Art/Other
+  - Assets/Standard Assets/2D/Prefabs
   m_LastFoldersGridSize: 73
   m_LastProjectPath: C:\Users\eventowy\Documents\Spartan\Spartan
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 12}
-    m_SelectedIDs: 42130000
-    m_LastClickedID: 4930
-    m_ExpandedIDs: 00000000b81000000a1200002a120000de13000034140000d81400000616000016160000aa1600008c170000b617000016180000a8190000281b0000541d0000681d0000821e0000ac1f0000ca230000424c0000444c0000464c0000484c000000ca9a3b
+    scrollPos: {x: 0, y: 156}
+    m_SelectedIDs: 7c170000
+    m_LastClickedID: 6012
+    m_ExpandedIDs: 00000000ba1000000c1200002c120000e013000036140000a6140000da140000dc1400001c160000b016000092170000bc1700001c180000ac180000b2190000321b00005e1d0000721d00008c1e0000b61f0000d6230000ba4f0000bc4f0000be4f0000c04f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: JMO Assets
+      m_OriginalName: JMO Assets
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 8286
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 14}
     m_SearchString: 
@@ -702,7 +702,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b81000000a1200002a120000de13000034140000d81400000616000016160000aa1600008c170000b617000016180000a8190000281b0000541d0000681d0000821e0000ac1f0000ca230000424c0000444c0000464c0000484c000000ca9a3b
+    m_ExpandedIDs: 00000000ba1000000c1200002c120000e013000036140000da1400001c160000b016000092170000bc1700001c180000b2190000e6190000321b00005e1d0000721d00008c1e0000b61f0000d6230000ba4f0000bc4f0000be4f0000c04f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -729,7 +729,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000f8400100243900009218000012100000c612000084110000b22100006ca60000000000004a1b000092730000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -754,6 +754,6 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 773}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 73
   m_DirectoriesAreaWidth: 262

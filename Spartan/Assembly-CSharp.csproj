@@ -74,6 +74,7 @@
     <Compile Include="Assets\Code\DestroyParticles.cs" />
     <Compile Include="Assets\Code\Enemy.cs" />
     <Compile Include="Assets\Code\GameMaster.cs" />
+    <Compile Include="Assets\Code\Geyser.cs" />
     <Compile Include="Assets\Code\HealthBar.cs" />
     <Compile Include="Assets\Code\LevelReset.cs" />
     <Compile Include="Assets\Code\MenuSceneLoader.cs" />
