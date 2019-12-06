@@ -26,16 +26,23 @@ public class Player : MonoBehaviour
       public bool damaged = false;
       public Color damageColour = new Color(0f,0f,0f, 0.5f);
       public float smoothColour = 5f;
-  }
+
+     
+    }
 
  public PlayerStats playerStats = new PlayerStats();
  public int fallBoundary = -20;
+    public Material matBlinking;
+    private Material matDefault;
+    private SpriteRenderer sr;
 
- private void Start()
+    private void Start()
  {
      playerStats.health = playerStats.startingHealth;
      playerStats.livesText.text = "Lives x " + playerStats.health;
- }
+        sr = GetComponent<SpriteRenderer>();
+        matDefault = sr.material;
+    }
 
  private void Update()
  {
@@ -48,7 +55,9 @@ public class Player : MonoBehaviour
      {
          if (playerStats.playerTimeBetweenHits > 0)
          {
-             playerStats.playerTimeBetweenHits -= Time.deltaTime;
+                sr.material = matBlinking;
+                Invoke("ResetMaterial", .1f);
+                playerStats.playerTimeBetweenHits -= Time.deltaTime;
          }
          else
          {
@@ -161,8 +170,10 @@ public class Player : MonoBehaviour
              return;
          }
         }
-
-
  }
- 
+    void ResetMaterial()
+    {
+        sr.material = matDefault;
+    }
+
 }
