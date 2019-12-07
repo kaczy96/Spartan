@@ -13,7 +13,6 @@ public class Player : MonoBehaviour {
         public float startingHealth = 5f;
         public float health = 0;
         public bool startCounting = false;
-        public Text livesText;
         public HealthVisualisation healthVisualisation;
         public Image damageScreen;
         public GameObject playerDeathEffect;
@@ -30,7 +29,6 @@ public class Player : MonoBehaviour {
 
     private void Start() {
         playerStats.health = playerStats.startingHealth;
-        playerStats.livesText.text = "Lives x " + playerStats.health;
         sr = GetComponent<SpriteRenderer>();
         matDefault = sr.material;
     }
@@ -50,8 +48,6 @@ public class Player : MonoBehaviour {
                 playerStats.startCounting = false;
             }
         }
-
-        playerStats.livesText.text = "Lives x " + playerStats.health;
 
         playerStats.healthVisualisation.UpdateHpMeter((int)playerStats.health);
 
