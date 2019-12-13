@@ -10,23 +10,23 @@ public class Geyser : MonoBehaviour
     void Start()
     {
         GeyserParticleSystem = GetComponent<ParticleSystem>();
-        StartCoroutine("Working");
+        StartCoroutine("GeyserIsWorking");
     }
 
-    public IEnumerator Working()
+    public IEnumerator GeyserIsWorking()
     {
         Collider.enabled = true;
         GeyserParticleSystem.Play();    
         yield return new WaitForSeconds(0.75f);
         Collider.enabled = false;
-        StartCoroutine("NotWorking");
+        StartCoroutine("GeyserIsNotWorking");
     }
 
-    public IEnumerator NotWorking()
+    public IEnumerator GeyserIsNotWorking()
     {
         GeyserParticleSystem.Stop();
         yield return new WaitForSeconds(2f);
-        StartCoroutine("Working");
+        StartCoroutine("GeyserIsWorking");
     }
 }
 

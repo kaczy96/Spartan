@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class RepetableSpawner : MonoBehaviour
 {
-    
+    public GameObject item;
+
     private float timeBetweenSpawns;
     public float startTimeBetweenSpawns;
-    public GameObject item;
 
     private void Start()
     {
         timeBetweenSpawns = startTimeBetweenSpawns;
     }
+
     void Spawn()
     {
         if (timeBetweenSpawns <= 0)

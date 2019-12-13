@@ -5,11 +5,9 @@ using UnityStandardAssets._2D;
 
 public class PortalMechanics : MonoBehaviour
 {
-
     public PlatformerCharacter2D Player;
     public Transform DestinationPoint;
     public Collider2D Trigger;
-
 
     void Start()
     {
@@ -24,10 +22,10 @@ public class PortalMechanics : MonoBehaviour
 
             Trigger.enabled = false;
             StartCoroutine("Wait");
-
         }
 
     }
+
     public IEnumerator Wait()
     {
         yield return new WaitForSeconds(2f);

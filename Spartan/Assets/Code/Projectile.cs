@@ -1,20 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
     private Transform player;
     public GameObject projectileExplosion;
     private Vector2 target;
-    
-    public float speed;
-    public int dmg;
+
+    public float projectileSpeed;
+    public int projectileDamageValue;
 
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        var position = player.position;
+        Vector3 position = player.position;
         target = new Vector2(position.x, position.y);
     }
 
@@ -27,25 +25,25 @@ public class Projectile : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Damage();
-        }    
+            DealDamageToPlayer();
+        }
     }
 
-    public void Damage()
+    public void DealDamageToPlayer()
     {
         Debug.Log("Enemy Attacking!");
         //attackTime = attackCd;
-        player.SendMessageUpwards("DamagePlayer", dmg);
+        player.SendMessageUpwards("DamagePlayer", projectileDamageValue);
     }
 
     private void DestroyProjectile()
     {
-        Destroy(gameObject);  
+        Destroy(gameObject);
     }
 
     private void ShootProjectile()
     {
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, target, projectileSpeed * Time.deltaTime);
 
         if (transform.position.x == target.x && transform.position.y == target.y)
         {

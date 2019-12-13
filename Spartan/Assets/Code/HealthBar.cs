@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class HealthBar : MonoBehaviour
 {
-
     private Transform bar;
     public Player player;
+
     void Start()
     {
         player = GetComponent<Player>();

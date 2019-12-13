@@ -7,15 +7,14 @@ namespace UnityStandardAssets._2D
     public class Platformer2DUserControl : MonoBehaviour
     {
         private PlatformerCharacter2D m_Character;
+
         private bool m_Jump;
         private bool m_Dash;
-
 
         private void Awake()
         {
             m_Character = GetComponent<PlatformerCharacter2D>();
         }
-
 
         private void Update()
         {
@@ -29,7 +28,6 @@ namespace UnityStandardAssets._2D
                 m_Dash = Input.GetButtonDown("Dash");
             }
         }
-
 
         private void FixedUpdate()
         {

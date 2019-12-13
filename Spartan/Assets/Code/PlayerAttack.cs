@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    public Collider2D attackTrigger;
+    private Animator anim;
+
     private bool attacking = false;
     private float attackTime = 0;
     private float attackCd = 0.3f;
-
-    public Collider2D attackTrigger;
-    private Animator anim;
 
     private void Awake()
     {
@@ -40,7 +40,6 @@ public class PlayerAttack : MonoBehaviour
             }
                 
         }
-
         anim.SetBool("attacking", attacking);
     }
 }

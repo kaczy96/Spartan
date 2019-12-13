@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
+    public GameObject camera;
 
     private float lenght;
     private float startpos;
-    public GameObject camera;
     public float parallaxEffect;
     
     void Start()
@@ -24,6 +24,5 @@ public class Parallax : MonoBehaviour
 
         if (temp > startpos + lenght) startpos += lenght;
         else if (temp < startpos - lenght) startpos -= lenght;
-        
     }
 }

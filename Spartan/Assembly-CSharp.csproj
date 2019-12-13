@@ -76,6 +76,8 @@
     <Compile Include="Assets\Code\GameMaster.cs" />
     <Compile Include="Assets\Code\Geyser.cs" />
     <Compile Include="Assets\Code\HealthBar.cs" />
+    <Compile Include="Assets\Code\HealthIcon.cs" />
+    <Compile Include="Assets\Code\HealthVisualisation.cs" />
     <Compile Include="Assets\Code\LevelReset.cs" />
     <Compile Include="Assets\Code\MenuSceneLoader.cs" />
     <Compile Include="Assets\Code\MovingObjects.cs" />
@@ -97,8 +99,6 @@
     <Compile Include="Assets\Code\Spawner.cs" />
     <Compile Include="Assets\Code\SpawnerOnPlayerEnter.cs" />
     <Compile Include="Assets\Code\Spikes.cs" />
-    <Compile Include="Assets\HealthIcon.cs" />
-    <Compile Include="Assets\HealthVisualisation.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />

@@ -4,21 +4,21 @@ using UnityEngine;
 
 public class Bug : MonoBehaviour
 {
-    private float timeBetweenSpawns;
-    public float startTimeBetweenSpawns;
     public GameObject item;
     private GameObject spawnedItem;
     private Transform target;
+
+    private float timeBetweenSpawns;
+    public float startTimeBetweenSpawns;
     public float spawnerDistance;
-        
-    
-        
+
         private void Start()
         {
             target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
             timeBetweenSpawns = startTimeBetweenSpawns;
             spawnedItem = GameObject.FindGameObjectWithTag("SpawnedItem");
         }
+
         void Spawn()
         {
             if (timeBetweenSpawns <= 0 )
@@ -27,13 +27,11 @@ public class Bug : MonoBehaviour
                 spawnedItem.tag = "SpawnedItem";
                 timeBetweenSpawns = startTimeBetweenSpawns;
             }
-    
             else
             {
                 timeBetweenSpawns -= Time.deltaTime;
             }
         }
-    
     
         private void Update()
         {
@@ -42,6 +40,5 @@ public class Bug : MonoBehaviour
                 Debug.Log("Spawning");
                 Spawn();
             }
-    
         }
 }

@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-
 public class Spikes : MonoBehaviour
 {
     private Player player;
+
     public int dmg;
     public bool hurting = false;
 
@@ -20,7 +19,6 @@ public class Spikes : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Damage();
-
         }
     }
 
@@ -42,7 +40,6 @@ public class Spikes : MonoBehaviour
 
     private void Update()
     {
-
         if (hurting)
         {
             Damage();

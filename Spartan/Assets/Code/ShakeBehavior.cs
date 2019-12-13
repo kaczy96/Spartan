@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class ShakeBehavior : MonoBehaviour
 {
-    private Vector3 cameraInitialPosition;
-    public float shakeMagnitude = 0.05f, shakeTime = 0.5f;
     public Camera mainCamera;
+    private Vector3 cameraInitialPosition;
+
+    public float shakeMagnitude = 0.05f, shakeTime = 0.5f;
 
     public void ShakeIt()
     {

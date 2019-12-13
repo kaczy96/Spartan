@@ -7,7 +7,7 @@ using UnityEngine;
  */
 public class AttackTrigger : MonoBehaviour
 {
-    [SerializeField ]public int dmg;
+    [SerializeField] public int dmg;
 
     void OnTriggerEnter2D(Collider2D other)
     {

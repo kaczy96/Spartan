@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HealthIcon : MonoBehaviour {
+
     [SerializeField] GameObject image;
     [SerializeField] GameObject particles;
 

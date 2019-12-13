@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AIController : MonoBehaviour
 {
@@ -30,12 +28,14 @@ public class AIController : MonoBehaviour
 
     private void Update()
     {
-        if(Vector2.Distance(transform.position, target.position)>stoppingDistance)
+        if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
+        {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
         else if (Vector2.Distance(transform.position, target.position) < stoppingDistance &&
                  Vector2.Distance(transform.position, target.position) > retreatDistance)
         {
-            transform.position = this.transform.position;
+            transform.position = transform.position;
         }
         else if (Vector2.Distance(transform.position, target.position) < retreatDistance)
         {
@@ -54,16 +54,16 @@ public class AIController : MonoBehaviour
         switch (enemy.enemyType)
         {
             case Enemy.EnemyType.Meele:
-                stoppingDistance = (int) 1.0f;
+                stoppingDistance = (int)1.0f;
                 retreatDistance = 0.5f;
                 break;
             case Enemy.EnemyType.Ranged:
                 stoppingDistance = rangedDistance;
-                retreatDistance = rangedDistance-1;
+                retreatDistance = rangedDistance - 1;
                 Shoot();
                 break;
             case Enemy.EnemyType.Bug:
-                break;       
+                break;
         }
     }
 
@@ -81,18 +81,18 @@ public class AIController : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    void Shoot()
+    private void Shoot()
     {
-        if (timeBetweenShots <= 0  && Vector2.Distance(transform.position, target.position) < missileRange)
+        if (timeBetweenShots <= 0 && Vector2.Distance(transform.position, target.position) < missileRange)
         {
             EnemyAnimator.SetTrigger("Attack");
             Instantiate(projectile, ProjectileTransformArea.position, Quaternion.identity);
-            timeBetweenShots = startTimeBetweenShots;  
+            timeBetweenShots = startTimeBetweenShots;
         }
         else
         {
             timeBetweenShots -= Time.deltaTime;
         }
     }
-    
+
 }

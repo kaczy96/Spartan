@@ -5,13 +5,14 @@ using UnityEngine;
 public class AttackTriggerEnemy : MonoBehaviour
 {
     [SerializeField] public int dmg;
-    public bool hurting = false;
-    private float attackTime = 0;
-    private float attackCd = 1f;
     private Player player;
     public Material matWhite;
     private Material matDefault;
     private SpriteRenderer sr;
+
+    public bool hurting = false;
+    private float attackTime = 0;
+    private float attackCd = 1f;
 
     private void Start()
     {
@@ -53,8 +54,6 @@ public class AttackTriggerEnemy : MonoBehaviour
             hurting = false;
         }
     }
-
-
 
     public void HurtThePlayer()
     {

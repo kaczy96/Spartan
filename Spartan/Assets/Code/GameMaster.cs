@@ -6,7 +6,11 @@ public class GameMaster : MonoBehaviour
 {
     public static GameMaster gm;
     public Player player;
+    public Transform playerPrefab;
+    public Transform spawnPoint;
 
+    public int spawnDelay;
+    
     private void Start()
     {
         if (gm == null)
@@ -14,11 +18,7 @@ public class GameMaster : MonoBehaviour
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         }
     }
-
-    public Transform playerPrefab;
-    public Transform spawnPoint;
-    public int spawnDelay;
-
+    
     private IEnumerator RespawnPlayer()
     {
         yield return new WaitForSeconds(spawnDelay);
@@ -26,7 +26,6 @@ public class GameMaster : MonoBehaviour
     }
 
     public static void KillPlayer(Player player)
-    
     {
         Destroy(player.gameObject);
         Debug.Log("Respawning player!");

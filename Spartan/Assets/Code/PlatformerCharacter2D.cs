@@ -12,10 +12,11 @@ namespace UnityStandardAssets._2D
         [SerializeField] private LayerMask m_WhatIsGround;
 
         private Transform m_GroundCheck;
-        const float k_GroundedRadius = .15f;
-        private bool m_Grounded;
         private Animator m_Anim;
         private Rigidbody2D m_Rigidbody2D;
+
+        const float k_GroundedRadius = .16f;
+        private bool m_Grounded;
         private bool m_FacingRight = true;
 
         private void Awake()
@@ -24,8 +25,7 @@ namespace UnityStandardAssets._2D
             m_Anim = GetComponent<Animator>();
             m_Rigidbody2D = GetComponent<Rigidbody2D>();
         }
-
-
+        
         private void FixedUpdate()
         {
             m_Grounded = false;
@@ -40,7 +40,6 @@ namespace UnityStandardAssets._2D
             m_Anim.SetBool("Ground", m_Grounded);
             m_Anim.SetFloat("vSpeed", m_Rigidbody2D.velocity.y);
         }
-
 
         public void Move(float move, bool jump, bool dash)
         {

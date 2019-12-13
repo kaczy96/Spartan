@@ -5,15 +5,13 @@ using UnityEngine;
 
 public class SpawnerOnPlayerEnter : MonoBehaviour
 {
-    
-    private float timeBetweenSpawns;
-    public float startTimeBetweenSpawns;
     public GameObject item;
     private GameObject spawnedItem;
     private Transform target;
-    public float spawnerDistance;
-    
 
+    private float timeBetweenSpawns;
+    public float startTimeBetweenSpawns;
+    public float spawnerDistance;
     
     private void Start()
     {
@@ -21,6 +19,7 @@ public class SpawnerOnPlayerEnter : MonoBehaviour
         timeBetweenSpawns = startTimeBetweenSpawns;
         spawnedItem = GameObject.FindGameObjectWithTag("SpawnedItem");
     }
+
     void Spawn()
     {
         if (timeBetweenSpawns <= 0 )
@@ -29,13 +28,11 @@ public class SpawnerOnPlayerEnter : MonoBehaviour
             spawnedItem.tag = "SpawnedItem";
             timeBetweenSpawns = startTimeBetweenSpawns;
         }
-
         else
         {
             timeBetweenSpawns -= Time.deltaTime;
         }
     }
-
 
     private void Update()
     {
@@ -44,6 +41,5 @@ public class SpawnerOnPlayerEnter : MonoBehaviour
             Debug.Log("Spawning");
             Spawn();
         }
-
     }
 }
