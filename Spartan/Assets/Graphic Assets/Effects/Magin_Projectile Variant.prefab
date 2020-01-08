@@ -77,6 +77,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 2451425116407715811, guid: 5496bdcdd4edc184e8606cc953988256,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.5850563
+      objectReference: {fileID: 0}
+    - target: {fileID: 2451425116407715811, guid: 5496bdcdd4edc184e8606cc953988256,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.6625557
+      objectReference: {fileID: 0}
     - target: {fileID: 199267688389471327, guid: 5496bdcdd4edc184e8606cc953988256,
         type: 3}
       propertyPath: speed
@@ -93,15 +103,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2077818304371535814, guid: 373e6fc6ad5318e488c8a1f8c850a227,
         type: 3}
-    - target: {fileID: 2451425116407715811, guid: 5496bdcdd4edc184e8606cc953988256,
+    - target: {fileID: 199267688389471327, guid: 5496bdcdd4edc184e8606cc953988256,
         type: 3}
-      propertyPath: m_Offset.x
-      value: -0.5850563
+      propertyPath: projectileSpeed
+      value: 22
       objectReference: {fileID: 0}
-    - target: {fileID: 2451425116407715811, guid: 5496bdcdd4edc184e8606cc953988256,
+    - target: {fileID: 199267688389471327, guid: 5496bdcdd4edc184e8606cc953988256,
         type: 3}
-      propertyPath: m_Radius
-      value: 0.6625557
+      propertyPath: projectileDamageValue
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8724208156653197643, guid: 5496bdcdd4edc184e8606cc953988256,
         type: 3}

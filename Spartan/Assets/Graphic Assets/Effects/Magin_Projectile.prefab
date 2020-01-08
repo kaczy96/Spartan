@@ -4746,8 +4746,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileExplosion: {fileID: 145779921557836784, guid: 5e974437ffbb8d24db18cb1ba9bc3c02,
     type: 3}
-  speed: 15
-  dmg: 1
+  projectileSpeed: 15
+  projectileDamageValue: 1
 --- !u!58 &2451425116407715811
 CircleCollider2D:
   m_ObjectHideFlags: 0
