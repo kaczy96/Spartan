@@ -25,6 +25,8 @@
           <e p="GameMaster.cs" t="Include" />
           <e p="Geyser.cs" t="Include" />
           <e p="HealthBar.cs" t="Include" />
+          <e p="HealthIcon.cs" t="Include" />
+          <e p="HealthVisualisation.cs" t="Include" />
           <e p="LevelReset.cs" t="Include" />
           <e p="MenuSceneLoader.cs" t="Include" />
           <e p="MovingObjects.cs" t="Include" />
@@ -54,8 +56,6 @@
             </e>
           </e>
         </e>
-        <e p="HealthIcon.cs" t="Include" />
-        <e p="HealthVisualisation.cs" t="Include" />
         <e p="JMO Assets" t="Include">
           <e p="Cartoon FX" t="Include">
             <e p="CartoonFX Free.txt" t="Include" />
@@ -256,6 +256,7 @@
             <e p="Skybox-Procedural.shader" t="Include" />
           </e>
         </e>
+        <e p="TitanController.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />

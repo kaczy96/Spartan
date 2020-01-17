@@ -152,6 +152,7 @@
     <Compile Include="Assets\PP\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PP\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PP\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
+    <Compile Include="Assets\TitanController.cs" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\MotionBlur.cginc" />

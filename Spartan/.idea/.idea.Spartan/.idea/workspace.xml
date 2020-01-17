@@ -2,25 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="262c2ba0-7805-4bd3-8f26-cd3ff3d79ac8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spartan/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spartan/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Spartan/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Spartan/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Spartan/v15/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Spartan/v15/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Spartan/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Spartan/v15/Server/sqlite3/storage.ide-shm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/Spartan/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Spartan/v15/Server/sqlite3/storage.ide-wal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp-Editor.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HealthIcon.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HealthIcon.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HealthVisualisation.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/HealthVisualisation.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Spartan.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Spartan.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene 2 - Firelands.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene 2 - Firelands.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Assembly-CSharp-Editor.csprojAssemblyReference.cache" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/TitanController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="232">
+              <caret line="45" column="28" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="28" />
+              <folding>
+                <marker date="1579269397450" expanded="true" signature="6:146" ph="..." />
+                <marker date="1579269397450" expanded="true" signature="193:1759" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="281:317" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="527:624" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="644:974" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="669:931" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="1003:1040" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="1073:1237" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="1272:1349" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="1379:1757" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="1423:1708" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="1617:1698" ph="{...}" />
+                <marker date="1579269397450" expanded="true" signature="1811:1883" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -43,6 +61,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Code/GameMaster.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TitanController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,6 +99,7 @@
         <option value="$PROJECT_DIR$/Assets/HealthIcon.cs" />
         <option value="$PROJECT_DIR$/Assets/HealthVisualisation.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/AIController.cs" />
+        <option value="$PROJECT_DIR$/Assets/TitanController.cs" />
       </list>
     </option>
   </component>
@@ -88,8 +108,20 @@
       <facet id="riderModule/invalid/Default Android Facet" />
     </ignored-facets>
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1060" />
+  </component>
   <component name="ProjectId" id="1UwZHp7ZGtKzzCyjzrfiLpfgvCY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -106,7 +138,19 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -163,8 +207,12 @@
       <workItem from="1575639206344" duration="2004000" />
       <workItem from="1576269541366" duration="118000" />
       <workItem from="1576269759275" duration="20000" />
+      <workItem from="1579265816439" duration="3120000" />
     </task>
     <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -174,6 +222,36 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -195,5 +273,29 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/TitanController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="45" column="28" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="28" />
+          <folding>
+            <marker date="1579269397450" expanded="true" signature="6:146" ph="..." />
+            <marker date="1579269397450" expanded="true" signature="193:1759" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="281:317" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="527:624" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="644:974" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="669:931" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="1003:1040" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="1073:1237" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="1272:1349" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="1379:1757" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="1423:1708" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="1617:1698" ph="{...}" />
+            <marker date="1579269397450" expanded="true" signature="1811:1883" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
