@@ -9,7 +9,7 @@ public class TitanController : MonoBehaviour {
     Player player;
     Animator animator;
 
-    float cooldown;
+    [SerializeField] float cooldown;
 
     public enum State {
         Idle,
@@ -47,7 +47,7 @@ public class TitanController : MonoBehaviour {
     void ChangeStateToAttack() {
         state = State.Attack;
         animator.SetInteger("attackNr", currentAttackZone.attackAnimationId);
-        cooldown = 0.4f + Random.Range(0f, 5f);
+        cooldown = 4f;
     }
 
     bool IsPlayerInAttackRange() {
