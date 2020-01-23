@@ -99,6 +99,7 @@
     <Compile Include="Assets\Code\Spawner.cs" />
     <Compile Include="Assets\Code\SpawnerOnPlayerEnter.cs" />
     <Compile Include="Assets\Code\Spikes.cs" />
+    <Compile Include="Assets\Code\TitanController.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
@@ -154,7 +155,6 @@
     <Compile Include="Assets\PP\PostProcessing\Runtime\Utils\MaterialFactory.cs" />
     <Compile Include="Assets\PP\PostProcessing\Runtime\Utils\RenderTextureFactory.cs" />
     <Compile Include="Assets\PP\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
-    <Compile Include="Assets\TitanController.cs" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\DepthOfField.shader" />
     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
     <None Include="Assets\PP\PostProcessing\Resources\Shaders\MotionBlur.cginc" />

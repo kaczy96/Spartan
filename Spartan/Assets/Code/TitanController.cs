@@ -25,6 +25,8 @@ public class TitanController : MonoBehaviour {
         animator = GetComponent<Animator>();
     }
 
+  
+
     void Update() {
         switch (state) {
             case State.Idle:
@@ -71,4 +73,10 @@ public class TitanController : MonoBehaviour {
 public class BossAttackZone {
     public int attackAnimationId;
     public BoxCollider2D collider;
+
+    /*public void OnDrawGizmos()
+    {
+        Gizmos.color = Color.magenta;
+        Gizmos.DrawWireCube(collider.offset, collider.transform.localScale);
+    }*/
 }

@@ -58978,7 +58978,7 @@ GameObject:
   m_Layer: 0
   m_Name: Attack zone 2
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -58990,7 +58990,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028697195}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.16, y: -8.01, z: 0}
+  m_LocalPosition: {x: -1.1, y: -13.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 978595905}
@@ -59009,7 +59009,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -3.0283432, y: 0}
+  m_Offset: {x: 0.34619904, y: 0.5377197}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -59020,7 +59020,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.1997223, y: 10}
+  m_Size: {x: 3.531479, y: 3.1593628}
   m_EdgeRadius: 0
 --- !u!1 &1028909551
 GameObject:
@@ -63277,7 +63277,7 @@ GameObject:
   m_Layer: 0
   m_Name: Attack zone 1
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -63289,7 +63289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1223544433}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.66, y: -8.09, z: 0}
+  m_LocalPosition: {x: -8.95, y: -13.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 978595905}
@@ -63305,10 +63305,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -1.4250946, y: 0}
+  m_Offset: {x: 1.0568466, y: 0.82338905}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -63319,7 +63319,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.487152, y: 10}
+  m_Size: {x: 3.1136932, y: 2.646778}
   m_EdgeRadius: 0
 --- !u!1 &1234099755
 GameObject:
@@ -71473,7 +71473,7 @@ GameObject:
   m_Layer: 0
   m_Name: Attack zone 3
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -71485,7 +71485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661319601}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.07, y: -8.26, z: 0}
+  m_LocalPosition: {x: 5.19, y: -13.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 978595905}
@@ -71501,10 +71501,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.188957, y: 0.35627556}
+  m_Offset: {x: 0.2857666, y: 0.80968475}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -71515,7 +71515,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.5411224, y: 9.999996}
+  m_Size: {x: 3.095642, y: 2.6193695}
   m_EdgeRadius: 0
 --- !u!1 &1672697175
 GameObject:
@@ -76474,14 +76474,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerPrefab
       objectReference: {fileID: 0}
-    - target: {fileID: 636130248, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 636130248, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.6
-      objectReference: {fileID: 0}
     - target: {fileID: 917006242, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
       propertyPath: m_LocalPosition.x
       value: 223.89
@@ -76565,6 +76557,14 @@ PrefabInstance:
     - target: {fileID: 917006243, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
       propertyPath: fallBoundary
       value: -10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 636130248, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 636130248, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 636130247, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
       propertyPath: m_Icon
