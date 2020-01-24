@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.Experimental.UIElements;
 using Random = UnityEngine.Random;
 
 public class TitanController : MonoBehaviour {
@@ -19,13 +20,12 @@ public class TitanController : MonoBehaviour {
     [SerializeField] State state = State.Idle;
     [SerializeField] List<BossAttackZone> attackZones = new List<BossAttackZone>();
     [SerializeField] BossAttackZone currentAttackZone;
-    
+
     void Start() {
         player = FindObjectOfType<Player>();
         animator = GetComponent<Animator>();
     }
 
-  
 
     void Update() {
         switch (state) {
@@ -59,12 +59,14 @@ public class TitanController : MonoBehaviour {
 
     void ChooseAttackZone() {
         foreach (var zone in attackZones) {
-            if (Physics2D.OverlapBoxAll(new Vector2(zone.collider.transform.position.x, zone.collider.transform.position.y), zone.collider.size, 0).Any(col => col.gameObject.tag == "Player")) {
+            var center = new Vector2(zone.collider.transform.position.x + zone.collider.offset.x,
+                zone.collider.transform.position.y + zone.collider.offset.y);
+            if (Physics2D.OverlapBoxAll(center, zone.collider.size, 0).Any(col => col.gameObject.tag == "Player")) {
                 currentAttackZone = zone;
                 return;
             }
         }
-        
+
         currentAttackZone = null;
     }
 }
@@ -73,10 +75,4 @@ public class TitanController : MonoBehaviour {
 public class BossAttackZone {
     public int attackAnimationId;
     public BoxCollider2D collider;
-
-    /*public void OnDrawGizmos()
-    {
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireCube(collider.offset, collider.transform.localScale);
-    }*/
 }
