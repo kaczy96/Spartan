@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Background\Parallax.cs" />
+    <Compile Include="Assets\BossAttacks.cs" />
     <Compile Include="Assets\Code\Camera2DFollow.cs" />
     <Compile Include="Assets\Code\CameraFollow.cs" />
     <Compile Include="Assets\Code\Platformer2DUserControl.cs" />
