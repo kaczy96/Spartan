@@ -20,8 +20,9 @@ public class TitanController : MonoBehaviour {
 
     [SerializeField] State state = State.Idle;
     [SerializeField] List<BossAttackZone> attackZones = new List<BossAttackZone>();
-    [SerializeField] BossAttackZone currentAttackZone;
+    [SerializeField] BossAttackZone currentPlayerZone;
     [SerializeField] List<visualEffects> visualEffects = new List<visualEffects>();
+    [SerializeField] int currentAttackZone;
 
     void Start() {
         player = FindObjectOfType<Player>();
@@ -50,13 +51,14 @@ public class TitanController : MonoBehaviour {
 
     void ChangeStateToAttack() {
         state = State.Attack;
-        animator.SetInteger("attackNr", currentAttackZone.attackAnimationId);   
+        animator.SetInteger("attackNr", currentPlayerZone.attackAnimationId);
+        currentAttackZone = currentPlayerZone.attackAnimationId;
         cooldown = 4f;
     }
 
     bool IsPlayerInAttackRange() {
         ChooseAttackZone();
-        return currentAttackZone != null;
+        return currentPlayerZone != null;
     }
 
     void ChooseAttackZone() {
@@ -64,26 +66,26 @@ public class TitanController : MonoBehaviour {
             var center = new Vector2(zone.collider.transform.position.x + zone.collider.offset.x,
                 zone.collider.transform.position.y + zone.collider.offset.y);
             if (Physics2D.OverlapBoxAll(center, zone.collider.size, 0).Any(col => col.gameObject.tag == "Player")) {
-                currentAttackZone = zone;
+                currentPlayerZone = zone;
                 return; 
             }
         }    
-        currentAttackZone = null;
+        currentPlayerZone = null;
     }
 
     void DisplayingEffectsBasedOnZone()
     {
-        if (currentAttackZone.attackAnimationId == 1)
+        if (currentAttackZone == 1)
         {
             Instantiate(visualEffects[0]._effect, visualEffects[0]._collider.transform.position, visualEffects[0]._collider.transform.rotation);
             camera.GetComponent<ShakeBehavior>().ShakeIt();
         }
-        if (currentAttackZone.attackAnimationId == 2)
+        if (currentAttackZone == 2)
         {
             //StartCoroutine("WaitForPillarHit");
             Instantiate(visualEffects[2]._effect, new Vector3(player.transform.position.x, visualEffects[2]._collider.transform.position.y), visualEffects[2]._effect.transform.rotation);
         }
-        if (currentAttackZone.attackAnimationId == 3)
+        if (currentAttackZone == 3)
         {
             Instantiate(visualEffects[1]._effect, visualEffects[1]._collider.transform.position, visualEffects[1]._collider.transform.rotation);
             camera.GetComponent<ShakeBehavior>().ShakeIt();
