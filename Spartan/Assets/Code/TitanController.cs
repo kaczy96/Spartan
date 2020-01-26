@@ -10,6 +10,7 @@ public class TitanController : MonoBehaviour {
     Player player;
     Animator animator;
 
+    [SerializeField] Camera camera;
     [SerializeField] float cooldown;
 
     public enum State {
@@ -20,6 +21,7 @@ public class TitanController : MonoBehaviour {
     [SerializeField] State state = State.Idle;
     [SerializeField] List<BossAttackZone> attackZones = new List<BossAttackZone>();
     [SerializeField] BossAttackZone currentAttackZone;
+    [SerializeField] List<visualEffects> visualEffects = new List<visualEffects>();
 
     void Start() {
         player = FindObjectOfType<Player>();
@@ -34,7 +36,7 @@ public class TitanController : MonoBehaviour {
                     ChangeStateToAttack();
                 break;
             case State.Attack:
-                state = State.Idle;
+                state = State.Idle;    
                 animator.SetInteger("attackNr", 0);
                 break;
         }
@@ -48,7 +50,7 @@ public class TitanController : MonoBehaviour {
 
     void ChangeStateToAttack() {
         state = State.Attack;
-        animator.SetInteger("attackNr", currentAttackZone.attackAnimationId);
+        animator.SetInteger("attackNr", currentAttackZone.attackAnimationId);   
         cooldown = 4f;
     }
 
@@ -63,11 +65,35 @@ public class TitanController : MonoBehaviour {
                 zone.collider.transform.position.y + zone.collider.offset.y);
             if (Physics2D.OverlapBoxAll(center, zone.collider.size, 0).Any(col => col.gameObject.tag == "Player")) {
                 currentAttackZone = zone;
-                return;
+                return; 
             }
+        }    
+        currentAttackZone = null;
+    }
+
+    void DisplayingEffectsBasedOnZone()
+    {
+        if (currentAttackZone.attackAnimationId == 1)
+        {
+            Instantiate(visualEffects[0]._effect, visualEffects[0]._collider.transform.position, visualEffects[0]._collider.transform.rotation);
+            camera.GetComponent<ShakeBehavior>().ShakeIt();
+        }
+        if (currentAttackZone.attackAnimationId == 2)
+        {
+            //StartCoroutine("WaitForPillarHit");
+            Instantiate(visualEffects[2]._effect, new Vector3(player.transform.position.x, visualEffects[2]._collider.transform.position.y), visualEffects[2]._effect.transform.rotation);
+        }
+        if (currentAttackZone.attackAnimationId == 3)
+        {
+            Instantiate(visualEffects[1]._effect, visualEffects[1]._collider.transform.position, visualEffects[1]._collider.transform.rotation);
+            camera.GetComponent<ShakeBehavior>().ShakeIt();
         }
 
-        currentAttackZone = null;
+    }
+
+    public IEnumerator WaitForPillarHit()
+    {
+        yield return new WaitForSeconds(2f);
     }
 }
 
@@ -75,4 +101,10 @@ public class TitanController : MonoBehaviour {
 public class BossAttackZone {
     public int attackAnimationId;
     public BoxCollider2D collider;
+}
+
+[System.Serializable]
+public class visualEffects{
+    public ParticleSystem _effect;
+    public Collider2D _collider;
 }

@@ -17,7 +17,6 @@ public class ColliderGizmoDrawer:MonoBehaviour {
         var center = new Vector3(collider.transform.position.x + collider.offset.x,
             collider.transform.position.y + collider.offset.y, collider.transform.position.z);
         Gizmos.color = Color.magenta;
-        Debug.Log("!");
         Gizmos.DrawWireCube(center, collider.size);
     }
 }

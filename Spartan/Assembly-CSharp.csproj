@@ -70,6 +70,7 @@
     <Compile Include="Assets\Code\CameraController.cs" />
     <Compile Include="Assets\Code\CameraFollow.cs" />
     <Compile Include="Assets\Code\CameraSwitch.cs" />
+    <Compile Include="Assets\Code\ColliderGizmoDrawer.cs" />
     <Compile Include="Assets\Code\DamageController.cs" />
     <Compile Include="Assets\Code\DestroyParticles.cs" />
     <Compile Include="Assets\Code\Enemy.cs" />
