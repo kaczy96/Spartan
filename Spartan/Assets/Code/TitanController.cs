@@ -82,8 +82,8 @@ public class TitanController : MonoBehaviour {
         }
         if (currentAttackZone == 2)
         {
-            //StartCoroutine("WaitForPillarHit");
             Instantiate(visualEffects[2]._effect, new Vector3(player.transform.position.x, visualEffects[2]._collider.transform.position.y), visualEffects[2]._effect.transform.rotation);
+            camera.GetComponent<ShakeBehavior>().ShakeIt();
         }
         if (currentAttackZone == 3)
         {
@@ -93,10 +93,6 @@ public class TitanController : MonoBehaviour {
 
     }
 
-    public IEnumerator WaitForPillarHit()
-    {
-        yield return new WaitForSeconds(2f);
-    }
 }
 
 [System.Serializable]
