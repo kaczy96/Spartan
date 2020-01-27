@@ -9,9 +9,11 @@ using Random = UnityEngine.Random;
 public class TitanController : MonoBehaviour {
     Player player;
     Animator animator;
+    AnimatorStateInfo animatorInfo;
 
     [SerializeField] Camera camera;
     [SerializeField] float cooldown;
+    [SerializeField] GameObject eyes;
 
     public enum State {
         Idle,
@@ -31,13 +33,21 @@ public class TitanController : MonoBehaviour {
 
 
     void Update() {
+
+        DisplayEyesEffects();
+
         switch (state) {
             case State.Idle:
-                if (IsPlayerInAttackRange() && IsReadyToAttack())
+
+                    if (IsPlayerInAttackRange() && IsReadyToAttack())   
                     ChangeStateToAttack();
                 break;
+
             case State.Attack:
-                state = State.Idle;    
+                if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"))
+                {
+                    state = State.Idle;
+                }
                 animator.SetInteger("attackNr", 0);
                 break;
         }
@@ -46,7 +56,16 @@ public class TitanController : MonoBehaviour {
     }
 
     bool IsReadyToAttack() {
-        return cooldown <= 0;
+        return cooldown <= 0;    
+    }
+
+    void DisplayEyesEffects()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("Idle"))
+        {
+            eyes.gameObject.SetActive(false);
+        }
+        else eyes.gameObject.SetActive(true);
     }
 
     void ChangeStateToAttack() {
@@ -75,10 +94,12 @@ public class TitanController : MonoBehaviour {
 
     void DisplayingEffectsBasedOnZone()
     {
+
         if (currentAttackZone == 1)
         {
             Instantiate(visualEffects[0]._effect, visualEffects[0]._collider.transform.position, visualEffects[0]._collider.transform.rotation);
             camera.GetComponent<ShakeBehavior>().ShakeIt();
+            
         }
         if (currentAttackZone == 2)
         {
