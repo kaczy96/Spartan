@@ -29,8 +29,12 @@ PrefabInstance:
       value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSpeed.minScalar
-      value: 6.4
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.minColor.g
@@ -46,15 +50,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.014017418
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.1809006
+      value: 0.58117276
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.990566
+      value: 0.172549
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
@@ -62,23 +66,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 2.24
+      value: 1.6800001
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.x
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.y
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.z
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.atime1
@@ -86,43 +90,47 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.x.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.x.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.y.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.y.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.z.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.z.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.magnitude.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: SizeBySpeedModule.range.y
-      value: 1.2800001
+      value: 0.96000004
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 245.18488
+      value: 254.1634
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29.965733
+      value: -2.6827812
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalPosition.z
@@ -160,129 +168,133 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2800001
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2800001
+      value: 0.96
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.9200001
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: lengthInSec
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startSpeed.scalar
-      value: -0.012800001
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startSpeed.minScalar
-      value: 6.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startColor.minColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startColor.minColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startColor.minColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.014017418
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.1809006
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.990566
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startColor.maxColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
-      propertyPath: InitialModule.startSize.scalar
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: scalingMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: -0.0096
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startColor.minColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.58117276
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.172549
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 0.128
+      value: 0.096
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.x
-      value: 1.2800001
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.y
-      value: 1.2800001
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.z
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: VelocityModule.y.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.x.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.x.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.y.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.y.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.z.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.z.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.magnitude.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800006, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: SizeBySpeedModule.range.y
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: lengthInSec
@@ -290,11 +302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 0.012800001
+      value: 0.0096
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSpeed.minScalar
-      value: 6.4
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.minColor.g
@@ -310,15 +322,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.014017418
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.1809006
+      value: 0.58117276
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.990566
+      value: 0.172549
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
@@ -326,59 +338,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.38400003
+      value: 0.28800002
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.x
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.y
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.z
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: VelocityModule.y.scalar
-      value: -0.0384
+      value: -0.028800001
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.x.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.x.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.y.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.y.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.z.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.z.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.magnitude.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800004, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: SizeBySpeedModule.range.y
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: lengthInSec
@@ -386,7 +398,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSpeed.minScalar
-      value: 6.4
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.minColor.g
@@ -402,15 +414,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.r
-      value: 0.014017418
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.g
-      value: 0.1809006
+      value: 0.58117276
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.b
-      value: 0.990566
+      value: 0.172549
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startColor.maxColor.a
@@ -418,11 +430,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.256
+      value: 0.192
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSize.minScalar
-      value: 0.128
+      value: 0.096
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState
@@ -442,55 +454,55 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.x
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.y
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ShapeModule.m_Scale.z
-      value: 3.8400002
+      value: 2.88
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: VelocityModule.y.scalar
-      value: 0.64000005
+      value: 0.48000002
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: VelocityModule.y.minScalar
-      value: 1.9200001
+      value: 1.44
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.x.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.x.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.y.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.y.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.z.scalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.z.minScalar
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: ClampVelocityModule.magnitude.scalar
-      value: 0.896
+      value: 0.67200005
       objectReference: {fileID: 0}
     - target: {fileID: 19800002, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}
       propertyPath: SizeBySpeedModule.range.y
-      value: 1.2800001
+      value: 0.96000004
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ada5d62ffe762ce4fbccc70dcdbc9022, type: 3}

@@ -9,11 +9,12 @@ using Random = UnityEngine.Random;
 public class TitanController : MonoBehaviour {
     Player player;
     Animator animator;
-    AnimatorStateInfo animatorInfo;
 
     [SerializeField] Camera camera;
     [SerializeField] float cooldown;
     [SerializeField] GameObject eyes;
+    [SerializeField] GameObject energyEffect;
+    [SerializeField] GameObject energyEffectSlot;
 
     public enum State {
         Idle,
@@ -23,7 +24,7 @@ public class TitanController : MonoBehaviour {
     [SerializeField] State state = State.Idle;
     [SerializeField] List<BossAttackZone> attackZones = new List<BossAttackZone>();
     [SerializeField] BossAttackZone currentPlayerZone;
-    [SerializeField] List<visualEffects> visualEffects = new List<visualEffects>();
+    [SerializeField] List<damagingVisualEffects> visualEffects = new List<damagingVisualEffects>();
     [SerializeField] int currentAttackZone;
 
     void Start() {
@@ -38,7 +39,6 @@ public class TitanController : MonoBehaviour {
 
         switch (state) {
             case State.Idle:
-
                     if (IsPlayerInAttackRange() && IsReadyToAttack())   
                     ChangeStateToAttack();
                 break;
@@ -92,14 +92,12 @@ public class TitanController : MonoBehaviour {
         currentPlayerZone = null;
     }
 
-    void DisplayingEffectsBasedOnZone()
+    void DisplayingDamagingEffectsBasedOnZone()
     {
-
         if (currentAttackZone == 1)
         {
             Instantiate(visualEffects[0]._effect, visualEffects[0]._collider.transform.position, visualEffects[0]._collider.transform.rotation);
-            camera.GetComponent<ShakeBehavior>().ShakeIt();
-            
+            camera.GetComponent<ShakeBehavior>().ShakeIt();      
         }
         if (currentAttackZone == 2)
         {
@@ -111,8 +109,16 @@ public class TitanController : MonoBehaviour {
             Instantiate(visualEffects[1]._effect, visualEffects[1]._collider.transform.position, visualEffects[1]._collider.transform.rotation);
             camera.GetComponent<ShakeBehavior>().ShakeIt();
         }
-
     }
+
+    void DisplayGatheringEnergy()
+    {
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Titan Attack 2 Animation"))
+        {
+            Instantiate(energyEffect, energyEffectSlot.transform.position, energyEffectSlot.transform.rotation);
+        }
+    }
+
 
 }
 
@@ -123,7 +129,7 @@ public class BossAttackZone {
 }
 
 [System.Serializable]
-public class visualEffects{
+public class damagingVisualEffects{
     public ParticleSystem _effect;
     public Collider2D _collider;
 }

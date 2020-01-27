@@ -4351,7 +4351,7 @@ AnimationClip:
   m_HasMotionFloatCurves: 0
   m_Events:
   - time: 0.46875
-    functionName: DisplayingEffectsBasedOnZone
+    functionName: DisplayingDamagingEffectsBasedOnZone
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
