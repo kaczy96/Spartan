@@ -12,6 +12,8 @@ TagManager:
   - Portal
   - MovingPlatform
   - Stationary Platform
+  - FxTemporaire
+  - Boss
   layers:
   - Default
   - TransparentFX

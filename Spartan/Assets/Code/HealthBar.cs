@@ -5,11 +5,11 @@ using UnityEngine;
 public class HealthBar : MonoBehaviour
 {
     private Transform bar;
-    public Player player;
+    public TitanController titanController;
 
     void Start()
     {
-        player = GetComponent<Player>();
+        titanController = GetComponent<TitanController>();
         Transform bar = transform.Find(("Bar"));
         bar.localScale = new Vector3(1f,1f);
     }
@@ -21,6 +21,6 @@ public class HealthBar : MonoBehaviour
 
     private void Update()
     {
-        SetSize(player.playerStats.health);
+        //SetSize(titanController.titan.health);
     }
 }

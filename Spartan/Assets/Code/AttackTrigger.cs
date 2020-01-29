@@ -13,9 +13,16 @@ public class AttackTrigger : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Debug.Log("Player just attacked the enemy!");
+            //Debug.Log("Player just attacked the enemy!");
             var enemiesDamageController = other.GetComponent<DamageController>();
             enemiesDamageController.Damage(dmg);
+        }
+
+        if (other.CompareTag("Boss"))
+        {
+            //Debug.Log("Player just hit the boss!");
+            var bossDamageController = other.GetComponent<TitanController>();
+            bossDamageController.TakeDamageFromPlayer(dmg);
         }
     }
 }

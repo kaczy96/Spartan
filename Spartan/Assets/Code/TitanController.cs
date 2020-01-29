@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Experimental.UIElements;
 using Random = UnityEngine.Random;
 
@@ -15,7 +16,9 @@ public class TitanController : MonoBehaviour {
     [SerializeField] GameObject eyes;
     [SerializeField] GameObject energyEffect;
     [SerializeField] GameObject energyEffectSlot;
-
+    [SerializeField] UnityEngine.UI.Slider healthBarValue;
+    [SerializeField] int currentHealth;
+    SpriteRenderer spriteRenderer;
     public enum State {
         Idle,
         Attack
@@ -30,12 +33,16 @@ public class TitanController : MonoBehaviour {
     void Start() {
         player = FindObjectOfType<Player>();
         animator = GetComponent<Animator>();
+        healthBarValue.value = 50;
+        currentHealth = 50;
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
 
     void Update() {
 
         DisplayEyesEffects();
+        BossHealth();
 
         switch (state) {
             case State.Idle:
@@ -55,6 +62,24 @@ public class TitanController : MonoBehaviour {
         cooldown -= Time.deltaTime;
     }
 
+    void BossHealth()
+    {
+        healthBarValue.value = currentHealth;
+    }
+
+    void visualEffectOnTakingHit()
+    {
+        spriteRenderer.color = Color.white;
+    }
+
+    public void TakeDamageFromPlayer(int damageTaken)
+    {
+        currentHealth -= damageTaken;
+        spriteRenderer.color = Color.red;
+        Invoke("visualEffectOnTakingHit", .1f);
+        Debug.Log("Boss got hit for: " + damageTaken);
+    }
+
     bool IsReadyToAttack() {
         return cooldown <= 0;    
     }
@@ -72,7 +97,7 @@ public class TitanController : MonoBehaviour {
         state = State.Attack;
         animator.SetInteger("attackNr", currentPlayerZone.attackAnimationId);
         currentAttackZone = currentPlayerZone.attackAnimationId;
-        cooldown = 4f;
+        cooldown = Random.Range(2,3);
     }
 
     bool IsPlayerInAttackRange() {
@@ -118,6 +143,8 @@ public class TitanController : MonoBehaviour {
             Instantiate(energyEffect, energyEffectSlot.transform.position, energyEffectSlot.transform.rotation);
         }
     }
+
+
 
 
 }
