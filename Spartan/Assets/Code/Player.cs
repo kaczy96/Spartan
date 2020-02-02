@@ -37,10 +37,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        if (transform.position.y <= fallBoundary)
+        /*if (transform.position.y <= fallBoundary)
         {
             DamagePlayer(99999);
-        }
+        }*/
 
         if (playerStats.startCounting)
         {

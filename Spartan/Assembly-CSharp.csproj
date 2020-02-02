@@ -94,7 +94,6 @@
     <Compile Include="Assets\Code\Projectile.cs" />
     <Compile Include="Assets\Code\RepetableSpawner.cs" />
     <Compile Include="Assets\Code\Restarter.cs" />
-    <Compile Include="Assets\Code\SceneAndURLLoader.cs" />
     <Compile Include="Assets\Code\ShakeBehavior.cs" />
     <Compile Include="Assets\Code\SlowMoButton.cs" />
     <Compile Include="Assets\Code\Spawner.cs" />
@@ -111,6 +110,8 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\ParticleDamageSystem.cs" />
     <Compile Include="Assets\PP\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PP\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PP\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />

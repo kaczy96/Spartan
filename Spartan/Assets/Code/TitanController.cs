@@ -29,7 +29,6 @@ public class TitanController : MonoBehaviour {
     [SerializeField] BossAttackZone currentPlayerZone;
     [SerializeField] List<damagingVisualEffects> visualEffects = new List<damagingVisualEffects>();
     [SerializeField] int currentAttackZone;
-    [SerializeField] List<BossHitZones> hitZones = new List<BossHitZones>();
 
     void Start() {
         player = FindObjectOfType<Player>();
@@ -44,7 +43,6 @@ public class TitanController : MonoBehaviour {
 
         DisplayEyesEffects();
         BossHealth();
-        DealDamageToPlayer();
 
         switch (state) {
             case State.Idle:
@@ -82,9 +80,20 @@ public class TitanController : MonoBehaviour {
         Debug.Log("Boss got hit for: " + damageTaken);
     }
 
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            DealDamageToPlayer();
+        }
+    }
+
     public void DealDamageToPlayer()
     {
+        player.DamagePlayer(2);
     }
+
+    
 
     bool IsReadyToAttack() {
         return cooldown <= 0;    
@@ -167,8 +176,3 @@ public class damagingVisualEffects{
     public Collider2D _collider;
 }
 
-[System.Serializable]
-public class BossHitZones
-{
-    public BoxCollider2D collider;
-}
