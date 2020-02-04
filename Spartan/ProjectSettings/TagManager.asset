@@ -14,6 +14,7 @@ TagManager:
   - Stationary Platform
   - FxTemporaire
   - Boss
+  - Killzone
   layers:
   - Default
   - TransparentFX

@@ -26,7 +26,6 @@ public class Player : MonoBehaviour
     private Material matDefault;
     private SpriteRenderer sr;
 
-    public int fallBoundary;
 
     private void Start()
     {
@@ -37,10 +36,7 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        /*if (transform.position.y <= fallBoundary)
-        {
-            DamagePlayer(99999);
-        }*/
+
 
         if (playerStats.startCounting)
         {
@@ -94,5 +90,14 @@ public class Player : MonoBehaviour
     private void ResetMaterial()
     {
         sr.material = matDefault;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Killzone"))
+        {
+            GameMaster.KillPlayer(this);
+            Instantiate(playerStats.playerDeathEffect, transform.position, transform.rotation);
+        }
     }
 }
