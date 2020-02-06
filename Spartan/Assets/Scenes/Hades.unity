@@ -4417,7 +4417,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.030388832, y: -0.042547226}
@@ -12222,7 +12222,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.123618364, y: -0.2060306}
@@ -17450,7 +17450,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0000019073486, y: -0.14699173}
@@ -59739,12 +59739,12 @@ PrefabInstance:
     - target: {fileID: 7711457468511191634, guid: 3c407194921e9394380f4759cab757ae,
         type: 3}
       propertyPath: orthographic size
-      value: 16
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7711457468511191596, guid: 3c407194921e9394380f4759cab757ae,
         type: 3}
       propertyPath: offset.y
-      value: 12
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7711457468511191635, guid: 3c407194921e9394380f4759cab757ae,
         type: 3}
@@ -68608,7 +68608,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0824101, y: -0.2060306}
@@ -76394,7 +76394,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.60779214, y: -0.1701827}
@@ -76792,6 +76792,14 @@ PrefabInstance:
       propertyPath: fallBoundary
       value: -10000
       objectReference: {fileID: 0}
+    - target: {fileID: 917006241, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d7ef22af6c8c77c498880d3c53ac7cbe, type: 2}
+    - target: {fileID: 917006237, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
+      propertyPath: m_GroundCheck
+      value: 
+      objectReference: {fileID: 1556131472}
     - target: {fileID: 636130248, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6
@@ -76809,14 +76817,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 917006241, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: d7ef22af6c8c77c498880d3c53ac7cbe, type: 2}
-    - target: {fileID: 917006237, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
-      propertyPath: m_GroundCheck
-      value: 
-      objectReference: {fileID: 1556131472}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 746ed6deb478d414ca72cb4253a5f638, type: 3}
 --- !u!1 &1899053663
