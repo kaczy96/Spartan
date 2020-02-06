@@ -43,6 +43,7 @@ public class TitanController : MonoBehaviour {
 
         DisplayEyesEffects();
         BossHealth();
+        ResetOnPlayersDeath();
 
         switch (state) {
             case State.Idle:
@@ -80,7 +81,7 @@ public class TitanController : MonoBehaviour {
         Debug.Log("Boss got hit for: " + damageTaken);
     }
 
-    /*public void OnTriggerEnter2D(Collider2D other)
+   /* public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
@@ -91,8 +92,8 @@ public class TitanController : MonoBehaviour {
     public void DealDamageToPlayer()
     {
         player.DamagePlayer(2);
-    }*/
-
+    }
+    */
     
 
     bool IsReadyToAttack() {
@@ -157,6 +158,14 @@ public class TitanController : MonoBehaviour {
         {
             Instantiate(energyEffect, energyEffectSlot.transform.position, energyEffectSlot.transform.rotation);
         }
+    }
+
+    void ResetOnPlayersDeath()
+    {
+        if(player.isActiveAndEnabled == false)
+        {
+            currentHealth = 50;
+        }    
     }
 
 

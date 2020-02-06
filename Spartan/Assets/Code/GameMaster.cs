@@ -15,7 +15,6 @@ public class GameMaster : MonoBehaviour
     {
         if (gm == null)
         {
-            spawnPoint.position = player.transform.position;
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         }
     }

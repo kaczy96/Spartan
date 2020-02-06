@@ -9,7 +9,7 @@ public class ParticleDamageSystem : MonoBehaviour
 
     void Start()
     {
-        player.GetComponent<Player>();
+        //player.GetComponent<Player>();
     }
 
     public void OnTriggerEnter2D(Collider2D other)
