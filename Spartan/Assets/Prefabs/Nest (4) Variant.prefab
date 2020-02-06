@@ -10,17 +10,17 @@ PrefabInstance:
     - target: {fileID: 1760427229423237821, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_Name
-      value: Nest (4) Variant
+      value: Nest (4) Variant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.84
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 46.01
+      value: 0.51
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
@@ -30,7 +30,7 @@ PrefabInstance:
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
@@ -70,7 +70,33 @@ PrefabInstance:
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: -0.3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240606735621204386, guid: 902b48770995f27488db6a4892a28abb,
+        type: 3}
+      propertyPath: spawningObject
+      value: 
+      objectReference: {fileID: 2619225201954065393, guid: 67f5d835b42894945a7cc77366d74a37,
+        type: 3}
+    - target: {fileID: 1240606735621204386, guid: 902b48770995f27488db6a4892a28abb,
+        type: 3}
+      propertyPath: rangeOfSpawner
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1240606735621204386, guid: 902b48770995f27488db6a4892a28abb,
+        type: 3}
+      propertyPath: startTimeBetweenSpawn
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1760427229423237817, guid: 902b48770995f27488db6a4892a28abb,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237817, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
@@ -82,21 +108,10 @@ PrefabInstance:
       propertyPath: m_Color.g
       value: 0.5801887
       objectReference: {fileID: 0}
-    - target: {fileID: 1760427229423237817, guid: 902b48770995f27488db6a4892a28abb,
+    - target: {fileID: 7870692505788256574, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1240606735621204386, guid: 902b48770995f27488db6a4892a28abb,
-        type: 3}
-      propertyPath: spawningObject
-      value: 
-      objectReference: {fileID: 2619225201954065393, guid: 67f5d835b42894945a7cc77366d74a37,
-        type: 3}
-    - target: {fileID: 1240606735621204386, guid: 902b48770995f27488db6a4892a28abb,
-        type: 3}
-      propertyPath: startTimeBetweenSpawn
-      value: 6
+      propertyPath: enemyStartingHealth
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 902b48770995f27488db6a4892a28abb, type: 3}

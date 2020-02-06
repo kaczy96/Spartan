@@ -10,17 +10,17 @@ PrefabInstance:
     - target: {fileID: 1760427229423237821, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_Name
-      value: Nest (6) Variant
+      value: Nest (6) Variant (1)
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -293.6
+      value: 481.2333
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.44
+      value: -87.016884
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
@@ -30,7 +30,7 @@ PrefabInstance:
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
@@ -70,18 +70,19 @@ PrefabInstance:
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.3
+      value: -0.6666666
       objectReference: {fileID: 0}
     - target: {fileID: 1760427229423237818, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 0.6666666
       objectReference: {fileID: 0}
-    - target: {fileID: 1760427229423237817, guid: 902b48770995f27488db6a4892a28abb,
+    - target: {fileID: 1240606735621204386, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
+      propertyPath: spawningObject
+      value: 
+      objectReference: {fileID: 4595089825812630663, guid: 85a747381bfbe5146a7e9b88887a0e9e,
+        type: 3}
     - target: {fileID: 1760427229423237817, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
       propertyPath: m_Color.r
@@ -97,16 +98,10 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.7836876
       objectReference: {fileID: 0}
-    - target: {fileID: 1240606735621204386, guid: 902b48770995f27488db6a4892a28abb,
-        type: 3}
-      propertyPath: spawningObject
-      value: 
-      objectReference: {fileID: 4595089825812630663, guid: 85a747381bfbe5146a7e9b88887a0e9e,
-        type: 3}
     - target: {fileID: 7870692505788256574, guid: 902b48770995f27488db6a4892a28abb,
         type: 3}
-      propertyPath: startingHealth
-      value: 3
+      propertyPath: enemyStartingHealth
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 902b48770995f27488db6a4892a28abb, type: 3}

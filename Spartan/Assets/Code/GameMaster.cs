@@ -15,19 +15,25 @@ public class GameMaster : MonoBehaviour
     {
         if (gm == null)
         {
+            spawnPoint.position = player.transform.position;
             gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         }
     }
     
     private IEnumerator RespawnPlayer()
     {
-        yield return new WaitForSeconds(spawnDelay);
-        Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
+        yield return new WaitForSeconds(spawnDelay);  
+        player.transform.position = spawnPoint.position;
+        player.gameObject.SetActive(true);
+        player.playerStats.health = player.playerStats.startingHealth;
+        //Instantiate(playerPrefab, spawnPoint.position, spawnPoint.rotation);
     }
 
     public static void KillPlayer(Player player)
     {
-        Destroy(player.gameObject);
+        player.playerStats.health = 0;
+        player.gameObject.SetActive(false);
+        //Destroy(player.gameObject);
         Debug.Log("Respawning player!");
         gm.StartCoroutine(gm.RespawnPlayer());
     }

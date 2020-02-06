@@ -7,6 +7,7 @@ public class AIController : MonoBehaviour
     public GameObject projectile;
     private Animator EnemyAnimator;
     public Transform ProjectileTransformArea;
+    private Player player;
 
     public float speed;
     public float stoppingDistance;
@@ -24,6 +25,7 @@ public class AIController : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         timeBetweenShots = startTimeBetweenShots;
         EnemyAnimator = GetComponent<Animator>();
+        player = FindObjectOfType<Player>();
     }
 
     private void Update()
@@ -63,6 +65,10 @@ public class AIController : MonoBehaviour
                 Shoot();
                 break;
             case Enemy.EnemyType.Bug:
+                if(player.isActiveAndEnabled == false)
+                {
+                    Destroy(gameObject);  
+                }
                 break;
         }
     }

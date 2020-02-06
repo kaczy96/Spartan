@@ -62,7 +62,7 @@ Transform:
   m_GameObject: {fileID: 9150177278655109226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.75, y: -1.29, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.6226176}
+  m_LocalScale: {x: -0.49999997, y: 0.49999997, z: 0}
   m_Children:
   - {fileID: 1676762175}
   m_Father: {fileID: 0}
@@ -147,8 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecbffb43e441b8449b989127cafdf520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 2
   DeathExplosion: {fileID: 100000, guid: f2dba9e16cd347f44a395b8204544ee5, type: 3}
+  enemyStartingHealth: 2
+  enemyCurrentHealth: 0
 --- !u!61 &9150177278655109230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -224,5 +225,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg: 1
-  hurting: 0
   matWhite: {fileID: 2100000, guid: a86aaf263f298a446820863bfdc87dfd, type: 2}
+  hurting: 0

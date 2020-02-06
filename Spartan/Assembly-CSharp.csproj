@@ -71,8 +71,8 @@
     <Compile Include="Assets\Code\CameraFollow.cs" />
     <Compile Include="Assets\Code\CameraSwitch.cs" />
     <Compile Include="Assets\Code\ColliderGizmoDrawer.cs" />
-    <Compile Include="Assets\Code\DamageController.cs" />
     <Compile Include="Assets\Code\DestroyParticles.cs" />
+    <Compile Include="Assets\Code\EnemiesHealthController.cs" />
     <Compile Include="Assets\Code\Enemy.cs" />
     <Compile Include="Assets\Code\GameMaster.cs" />
     <Compile Include="Assets\Code\Geyser.cs" />
@@ -80,9 +80,11 @@
     <Compile Include="Assets\Code\HealthIcon.cs" />
     <Compile Include="Assets\Code\HealthVisualisation.cs" />
     <Compile Include="Assets\Code\LevelReset.cs" />
+    <Compile Include="Assets\Code\MainMenu.cs" />
     <Compile Include="Assets\Code\MenuSceneLoader.cs" />
     <Compile Include="Assets\Code\MovingObjects.cs" />
     <Compile Include="Assets\Code\Parallax.cs" />
+    <Compile Include="Assets\Code\ParticleDamageSystem.cs" />
     <Compile Include="Assets\Code\PauseMenu.cs" />
     <Compile Include="Assets\Code\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\Code\PlatformController.cs" />
@@ -110,8 +112,6 @@
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
-    <Compile Include="Assets\MainMenu.cs" />
-    <Compile Include="Assets\ParticleDamageSystem.cs" />
     <Compile Include="Assets\PP\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\PP\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
     <Compile Include="Assets\PP\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />

@@ -30,6 +30,7 @@ public class Spikes : MonoBehaviour
         }
     }
 
+
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
@@ -38,11 +39,16 @@ public class Spikes : MonoBehaviour
         }
     }
 
+
     private void Update()
     {
-        if (hurting)
+        if (hurting && player.isActiveAndEnabled == true)
         {
             Damage();
+        }
+        else
+        {
+            hurting = false;
         }
     }
 

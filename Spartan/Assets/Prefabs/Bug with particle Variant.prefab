@@ -97,6 +97,11 @@ PrefabInstance:
       propertyPath: speed
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2123080599474080409, guid: 13b03a00626008449ba421d90c0c473d,
+        type: 3}
+      propertyPath: enemyStartingHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5598195204298409280, guid: 13b03a00626008449ba421d90c0c473d,
         type: 3}
       propertyPath: InitialModule.startColor.maxColor.r

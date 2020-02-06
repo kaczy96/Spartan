@@ -65,9 +65,13 @@ public class AttackTriggerEnemy : MonoBehaviour
     private void Update()
     {
 
-        if (hurting)
+        if (hurting && player.isActiveAndEnabled == true)
         {
             HurtThePlayer();
+        }
+        else
+        {
+            hurting = false;
         }
 
         if (player == null)
