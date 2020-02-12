@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_Lightnings 1
+  m_Shader: {fileID: 4800000, guid: b224f4396ac99cb4ea721ce2190f9cc5, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_2BD61F7F: 20
+    - Vector1_D024E469: 20
+    m_Colors:
+    - Color_47EEB187: {r: 0.061409745, g: 0.67176294, b: 0.8679245, a: 1}
+    - Color_D6808433: {r: 0.07809719, g: 0.2261611, b: 0.3679245, a: 1}
+    - Vector2_339A0888: {r: 1, g: 0.5, b: 0, a: 0}
+    - Vector2_47F2A617: {r: 0.1, g: -0.5, b: 0, a: 0}
+    - Vector2_6B346940: {r: 1, g: 0.5, b: 0, a: 0}
+    - Vector2_C0816F9F: {r: 0.1, g: -0.5, b: 0, a: 0}
