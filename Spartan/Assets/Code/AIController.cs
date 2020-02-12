@@ -15,6 +15,7 @@ public class AIController : MonoBehaviour
     public float retreatDistance;
     public float runningAwaySpeed;
     public float missileRange;
+    public float aggroRange;
     private bool m_FacingRight = true;
     private float timeBetweenShots;
     public float startTimeBetweenShots;
@@ -33,6 +34,14 @@ public class AIController : MonoBehaviour
         if (Vector2.Distance(transform.position, target.position) > stoppingDistance)
         {
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
+        if (Vector2.Distance(transform.position, target.position) < aggroRange)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+        }
+        if (Vector2.Distance(transform.position, target.position) > aggroRange)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, target.position, 0);
         }
         else if (Vector2.Distance(transform.position, target.position) < stoppingDistance &&
                  Vector2.Distance(transform.position, target.position) > retreatDistance)
