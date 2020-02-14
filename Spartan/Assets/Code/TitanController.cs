@@ -87,15 +87,8 @@ public class TitanController : MonoBehaviour {
         {
             DealDamageToPlayer();
         }
-    }
-
-    public void DealDamageToPlayer()
-    {
-        player.DamagePlayer(2);
-    }
-    */
-    
-
+    }*/
+   
     bool IsReadyToAttack() {
         return cooldown <= 0;    
     }
@@ -138,7 +131,7 @@ public class TitanController : MonoBehaviour {
         if (currentAttackZone == 1)
         {
             Instantiate(visualEffects[0]._effect, visualEffects[0]._collider.transform.position, visualEffects[0]._collider.transform.rotation);
-            camera.GetComponent<ShakeBehavior>().ShakeIt();      
+            camera.GetComponent<ShakeBehavior>().ShakeIt();
         }
         if (currentAttackZone == 2)
         {
@@ -150,8 +143,15 @@ public class TitanController : MonoBehaviour {
             Instantiate(visualEffects[1]._effect, visualEffects[1]._collider.transform.position, visualEffects[1]._collider.transform.rotation);
             camera.GetComponent<ShakeBehavior>().ShakeIt();
         }
+        StartCoroutine("TryToDealDamageToPlayer");
     }
 
+    IEnumerator TryToDealDamageToPlayer() {
+        yield return new WaitForSeconds(0.3f);
+        if(IsPlayerInAttackRange() )
+            player.DamagePlayer(1);
+    }
+    
     void DisplayGatheringEnergy()
     {
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Titan Attack 2 Animation"))

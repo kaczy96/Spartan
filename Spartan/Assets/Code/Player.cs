@@ -69,8 +69,10 @@ public class Player : MonoBehaviour
 
     public void DamagePlayer(int damage)
     {
+        Debug.Log("DealDamage");
         if (!playerStats.startCounting)
         {
+            Debug.Log("\t Dealing damage");
             playerStats.startCounting = true;
             playerStats.playerTimeBetweenHits = playerStats.attackCd;
             playerStats.damaged = true;
@@ -79,9 +81,8 @@ public class Player : MonoBehaviour
 
         if (playerStats.health <= 0)
         {
+            Debug.Log("\t Killing the player");
             playerStats.healthVisualisation.UpdateHpMeter((int)playerStats.health);
-            Debug.Log("Kill player");
-
             GameMaster.KillPlayer(this);
             Instantiate(playerStats.playerDeathEffect, transform.position, transform.rotation);
         }
