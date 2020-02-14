@@ -42,12 +42,12 @@ public class ChasePlayer : MonoBehaviour
         if(transform.position.x < target.position.x+3)
         {
             rb.velocity = new Vector2(moveSpeed, 0);
-            transform.localScale = new Vector2(1, 1);
+            transform.localScale = new Vector3(1, 1, 1);
         }
         else
         {
             rb.velocity = new Vector2(-moveSpeed, 0);
-            transform.localScale = new Vector2(-1, 1);
+            transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 }
