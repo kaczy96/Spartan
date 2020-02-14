@@ -28,7 +28,7 @@ public class TitanController : MonoBehaviour {
     [SerializeField] List<BossAttackZone> attackZones = new List<BossAttackZone>();
     [SerializeField] BossAttackZone currentPlayerZone;
     [SerializeField] List<damagingVisualEffects> visualEffects = new List<damagingVisualEffects>();
-    [SerializeField] int currentAttackZone;
+    [SerializeField] int currentAttackAnimationId;
 
     void Start() {
         player = FindObjectOfType<Player>();
@@ -38,8 +38,11 @@ public class TitanController : MonoBehaviour {
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+    Vector3 lastSpotWhereBossCouldHitThePlayer;
 
     void Update() {
+        if (IsPlayerInAttackRange())
+            lastSpotWhereBossCouldHitThePlayer = player.transform.position;
 
         DisplayEyesEffects();
         BossHealth();
@@ -105,7 +108,7 @@ public class TitanController : MonoBehaviour {
     void ChangeStateToAttack() {
         state = State.Attack;
         animator.SetInteger("attackNr", currentPlayerZone.attackAnimationId);
-        currentAttackZone = currentPlayerZone.attackAnimationId;
+        currentAttackAnimationId = currentPlayerZone.attackAnimationId;
         cooldown = Random.Range(2,3);
     }
 
@@ -128,17 +131,18 @@ public class TitanController : MonoBehaviour {
 
     void DisplayingDamagingEffectsBasedOnZone()
     {
-        if (currentAttackZone == 1)
+        
+        if (currentAttackAnimationId == 1)
         {
             Instantiate(visualEffects[0]._effect, visualEffects[0]._collider.transform.position, visualEffects[0]._collider.transform.rotation);
             camera.GetComponent<ShakeBehavior>().ShakeIt();
         }
-        if (currentAttackZone == 2)
+        if (currentAttackAnimationId == 2)
         {
-            Instantiate(visualEffects[2]._effect, new Vector3(player.transform.position.x, visualEffects[2]._collider.transform.position.y), visualEffects[2]._effect.transform.rotation);
+            Instantiate(visualEffects[2]._effect, new Vector3(lastSpotWhereBossCouldHitThePlayer.x, visualEffects[2]._collider.transform.position.y), visualEffects[2]._effect.transform.rotation);
             camera.GetComponent<ShakeBehavior>().ShakeIt();
         }
-        if (currentAttackZone == 3)
+        if (currentAttackAnimationId == 3)
         {
             Instantiate(visualEffects[1]._effect, visualEffects[1]._collider.transform.position, visualEffects[1]._collider.transform.rotation);
             camera.GetComponent<ShakeBehavior>().ShakeIt();
